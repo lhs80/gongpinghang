@@ -1,0 +1,11 @@
+.login-btn .login,
+.login-btn .regist {
+  box-sizing: border-box;
+}
+.login-btn .loging {
+  line-height: 32px;
+}
+.login-btn .regist {
+  line-height: 28px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,87 @@
+@import '../../../static/base.less';
+.invite-detail-sub-title {
+  font-size: 16px;
+  .text-black;
+  position: relative;
+  text-indent: 1em;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 18px;
+    background: #FFB432;
+    margin-top: 3px;
+  }
+}
+
+
+
+.invite-detail-content{
+  margin: 18px 0 30px 16px;
+  .h5;
+  /*div{
+    margin-top:10px;
+  }*/
+  .inviteImg{
+    width:160px;
+    margin-right: 20px;
+    img{
+      width:155px;
+      height:110px;
+    }
+  }
+  .ant-table-placeholder{
+    margin-top:-1px;
+  }
+  label,.leftLabel {
+    .text-muted;
+    .text-right;
+    display: inline-block;
+    width:90px;
+  }
+  i,.leftText{
+    .text-muted;
+    .text-right;
+    display: inline-block;
+    width:100px;
+  }
+  span {
+    .text-black;
+  };
+  a{
+    text-decoration: underline !important;
+  }
+}
+.inviteBtn{
+  .btn-recommend {
+    background-image: linear-gradient(to right, #3BA7EB, #3B88EB, #3BA7EB);
+    border: none;
+    color: #fff;
+  }
+}
+//我的询价单tab
+.my-invite-tab {
+  background: #FFFAF0;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
+  a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    border: none;
+  }
+  button {
+    margin-right: 30px;
+  }
+  .active {
+    .text-primary;
+    .bg-white;
+    border: none;
+    border-bottom: solid 2px @primaryColor;
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../../../static/base.less";
+
+.answer-panel {
+  .bg-white;
+  height: 260px;
+  float: left;
+  padding: 24px 16px;
+  width: 602px;
+  & + .answer-panel {
+    margin-left: 16px;
+  }
+  .cover-image {
+    height: 163px;
+    float: left;
+    margin-right: 26px;
+    width: 198px;
+  }
+  .question-list {
+    li {
+      color: #3b3b3b;
+    }
+    float: left;
+    width: 300px;
+  }
+  .ant-tabs-bar {
+    border: none;
+    margin: 0 0 17px;
+  }
+  .ant-tabs-nav .ant-tabs-tab {
+    padding: 0 0 4px 0;
+  }
+  .ant-tabs-nav .ant-tabs-tab-active {
+    .text-primary
+  }
+}

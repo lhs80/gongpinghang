@@ -1,0 +1,113 @@
+@import '../../../static/base.less';
+
+.shop-wrapper {
+  .bg-white;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 60px 16px 40px 60px;
+  .shop-info {
+    -webkit-box-flex: 1;
+  }
+  //商家信息页面的标题
+  .shop-title {
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    background: url("../../../static/images/bg-material-shop.png");
+    vertical-align: middle;
+    .shopLogo {
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .shop-subtitle {
+    height: 42px;
+    line-height: 55px;
+    color: #202533;
+    font-size: 24px;
+    &.shop {
+      background: url("/static/images/bg-shop-title.jpg") no-repeat 0 0;
+    }
+  }
+
+  .shop-notice {
+    background: #FFFAF0;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .12);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .12);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .12);
+    color: #999999;
+    line-height: 1;
+    margin-top: 16px;
+    padding: 20px;
+    width: 834px;
+  }
+
+  .material-shop-products {
+    padding: 44px 26px 30px;
+  }
+
+  .shopInfo-table {
+    margin-top: 20px;
+    table-layout: fixed;
+    width: 850px;
+    border-collapse: separate;
+    td {
+      color: #000;
+      vertical-align: top;
+      word-break: break-all;
+      padding: 20px 0 0;
+    }
+    td.title {
+      width: 136px;
+      color: #999999;
+      text-align: left;
+    }
+  }
+
+  //商家图集
+  .shop-images {
+    width: 243px;
+    padding-left: 26px;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 6px;
+      height: 253px;
+      background: #f1f1f1;
+    }
+
+    //缩略图
+    .swiper-container {
+      img {
+        height: 151px;
+      }
+    }
+    .swiper-container-thumbs {
+      overflow: hidden;
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+    .btn-prev, .btn-next {
+      position: absolute;
+      bottom: 20px;
+    }
+    .btn-prev {
+      left: 5px;
+    }
+    .btn-next {
+      right: -15px;
+    }
+  }
+}

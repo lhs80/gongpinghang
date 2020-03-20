@@ -1,0 +1,20 @@
+.content-container {
+  margin: 0 auto;
+  width: 1220px;
+  min-height: 600px !important;
+}
+.content-container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.login-head {
+  height: 140px !important;
+  padding: 32px 0 35px 0 !important;
+  background: transparent !important;
+}
+.login-head .login-head-wrapper {
+  width: 1220px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */

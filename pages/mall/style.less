@@ -1,0 +1,236 @@
+@import "../../static/base.less";
+
+.material-detail {
+  .bg-white;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -o-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  padding: 16px;
+  margin-top: 16px;
+  .maxWidth;
+  .material-detail-img {
+    width: 360px;
+    height: 360px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .material-detail-info {
+    -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1; /* OLD - Firefox 19- */
+    -webkit-flex: 1; /* Chrome */
+    -ms-flex: 1; /* IE 10 */
+    flex: 1; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    margin-left: 20px;
+
+    .material-detail-info-sub {
+      background: #f2faf7;
+      padding: 18px 0 18px 28px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+    }
+
+    .mall-detail-button {
+      margin-top: 90px;
+      button {
+        padding: 0 !important;
+        vertical-align: middle;
+      }
+      button.ant-btn-default {
+        padding: 0 10px !important;
+        height: 50px;
+        text-align: center;
+      }
+      button.ant-btn-primary {
+        width: 128px;
+        height: 44px;
+        font-size: 18px;
+        margin-right: 30px;
+      }
+    }
+  }
+}
+
+//商品详情中的商家店铺信息
+.product-detail--shopinfo {
+  height: 468px;
+  margin-top: 15px;
+  .maxWidth;
+  .text-center;
+  .title {
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    .h5;
+    .text-center;
+    background: url("/static/images/bg-material-shop-small.png");
+  }
+
+  .content {
+    .text-left;
+    label {
+      display: inline-block;
+      width: 57px;
+      color: #999;
+      margin-left: 40px;
+      margin-right: 30px;
+    }
+    margin: 40px auto;
+  }
+
+  button {
+    width: 160px;
+    height: 40px;
+    margin: 0 auto;
+  }
+}
+
+.product-detail--title {
+  .text-muted;
+  .text-left;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 26px !important;
+}
+
+.product-detail--content {
+  padding: 40px 80px;
+}
+.addressMwrapper {
+  width: 640px;
+  height: 610px;
+  margin: -305px 0 0 -320px;
+  background: #fafafa;
+}
+.addressMwrapper .addressInfo {
+  margin: 34px 0 26px 0;
+  height: 424px;
+  overflow-y: scroll;
+}
+.addressMwrapper .addressInfo .lineAddress {
+  min-height: 90px;
+  background: #fff;
+  display: flex;
+  margin: 10px 30px 16px;
+  align-items: center;
+  position: relative;
+}
+.addressMwrapper .addressInfo .lineAddress:hover {
+  box-shadow: 0 0 10px #dae6e0;
+  background: #f2faf7;
+  cursor: pointer;
+}
+.addressMwrapper .addressInfo .lineAddress .defaultAddress {
+  position: absolute;
+  width: 80px;
+  height: 24px;
+  right: 24px;
+  top: 12px;
+  border-radius: 12px;
+  color: #66bb6a;
+  background: #ebf7dd;
+}
+.addressMwrapper .addressInfo .activeAddress {
+  box-shadow: 0 0 10px #dae6e0;
+  background: #f2faf7;
+}
+.addressMwrapper .addressInfo .headerImg {
+  width: 80px;
+}
+.addressMwrapper .addressInfo .customerInfo {
+  display: flex;
+  align-items: center;
+}
+.commonWrapper {
+  border-radius: 8px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  .closeBtn {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #999;
+  }
+  .sellerSearch {
+    .ant-input-suffix {
+      button {
+        height: 40px;
+        font-size: 20px;
+      }
+    }
+  }
+  .businessInfo {
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0;
+    }
+    .nameDescribed {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  .sellerType {
+    .ant-menu {
+      margin-left: -12px;
+    }
+    .ant-menu-horizontal {
+      line-height: 14px;
+    }
+    .ant-menu-item-selected {
+      border: none;
+    }
+    .ant-menu-item {
+      border: 1px solid #fff;
+      padding: 0 14px;
+      &:nth-child(4) {
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+      }
+    }
+  }
+}
+//输入验证码弹框
+.smsCodeInputMask {
+  width: 350px;
+  margin: 0 auto;
+  input {
+    border: none;
+    outline: none;
+    width: 72px;
+    height: 100px !important;
+    line-height: 100px !important;
+    font-size: 70px;
+    background: #e5f6ef;
+    text-align: center;
+    &:focus {
+      border: none;
+      outline: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+    & + input {
+      margin-left: 20px;
+    }
+  }
+}

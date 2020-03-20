@@ -1,0 +1,59 @@
+.main-foot {
+  width: 100%;
+  min-width: 1220px;
+  height: 210px;
+  background: #2b2d32 !important;
+  padding: 18px 0 0 !important;
+  margin-top: 16px;
+}
+.main-foot .main-foot-wrapper {
+  width: 1220px;
+  min-width: 1220px;
+  color: #8A8C99 !important;
+  margin: 0 auto;
+}
+.main-foot .main-foot-wrapper a {
+  display: inline-block;
+  color: inherit;
+}
+.main-foot .main-foot-wrapper a .anticon {
+  color: inherit;
+  font-size: 28px;
+}
+.main-foot .main-foot-wrapper a + a {
+  margin-left: 24px;
+}
+.main-foot .main-foot-wrapper h4 {
+  color: rgba(138, 140, 153, 0.5);
+}
+.main-foot .main-foot-wrapper h5 {
+  color: inherit;
+}
+.main-foot .main-foot-wrapper h5 span + span {
+  margin-left: 20px;
+}
+.main-foot .netWord-report {
+  background: url("/static/images/bg-police.png") no-repeat left top;
+}
+.main-foot .netWord-report a {
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  padding-left: 36px;
+}
+.main-foot .netWord-police {
+  background: url("/static/images/bg-report.png") no-repeat left top;
+}
+.main-foot .netWord-police a {
+  display: inline-block;
+  height: 27px;
+  padding-left: 36px;
+}
+.main-foot .credible {
+  background: url("/static/images/bg-credible.png") no-repeat left top;
+  width: 68px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 40px;
+}
+/*# sourceMappingURL=style.css.map */

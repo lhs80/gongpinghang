@@ -1,0 +1,486 @@
+@import '../../../static/base.less';
+
+.inquiry-main-title {
+  color: #000;
+  font-size: 24px;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 30px;
+  background: url("/static/images/bg-inquiry.png") no-repeat 30px top;
+}
+
+.inquiry-detail-sub-title {
+  font-size: 16px;
+  .text-black;
+  position: relative;
+  text-indent: 1em;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 18px;
+    background: #FFB432;
+    margin-top: 3px;
+  }
+}
+
+.inquiry-detail-sub-content {
+  margin: 18px 0 30px 36px;
+  .h5;
+  div {
+    .mt1
+  }
+
+  label {
+    .text-muted;
+  }
+
+  span {
+    .text-black;
+  }
+}
+
+//询价单详情标题
+.inquiry-detail-title {
+  margin-top: 13px !important;
+}
+
+//询价单详情收货信息
+.inquiry-detail-buyer-info {
+  margin-top: 47px !important;
+}
+
+//询价单详情副标题
+.inquiry-detail-smalltitle {
+  margin-top: 80px !important;
+}
+
+//询价单详情右上角状态标识
+.inquiry-detail-flag, .inquiry-detail-flag-overdue {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  width: 180px;
+  height: 120px;
+  color: white;
+  text-align: center;
+}
+
+.inquiry-detail-flag {
+  background: #316ccb;
+  -webkit-box-shadow: 0 10px 10px rgba(49, 108, 203, 0.38);
+  -moz-box-shadow: 0 10px 10px rgba(49, 108, 203, 0.38);
+  box-shadow: 0 10px 10px rgba(49, 108, 203, 0.38);
+}
+
+//询价单详情右上角状态标识
+.inquiry-detail-flag-overdue {
+  background: #999;
+}
+
+.inquiry-detail-flag .top,
+.inquiry-detail-flag-overdue .top {
+  width: 132px;
+  height: 32px;
+  font-size: 14px;
+  margin: 33px auto 24px auto;
+}
+
+.inquiry-detail-flag .date,
+.inquiry-detail-flag-overdue .date {
+  color: rgba(255, 255, 255, .6);
+}
+
+.inquiry-detail-flag .day,
+.inquiry-detail-flag-overdue .day {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+  vertical-align: bottom
+}
+
+.inquiry-detail-flag-overdue .top-overdue {
+  color: white;
+  margin-top: 42px !important;
+  margin-bottom: 30px !important;
+}
+
+.my-inquiry-checked-detail:hover .anticon {
+  color: #316ccb !important;
+}
+
+//询价详情中供应商报价信息表
+.inquiry-detail-table-supply {
+  -webkit-box-shadow: 0 0 10px #dae6e0;
+  -moz-box-shadow: 0 0 10px #dae6e0;
+  box-shadow: 0 0 10px #dae6e0;
+
+  .ant-table-thead > tr > th {
+    .text-muted;
+    background: #dff3eb;
+  }
+
+  .ant-table-tbody > tr > td {
+    color: #38414c;
+    background: #f2faf7;
+  }
+}
+
+.inquiry-detail-table-inquiry {
+  -webkit-box-shadow: 0 0 10px #dae6e0;
+  -moz-box-shadow: 0 0 10px #dae6e0;
+  box-shadow: 0 0 10px #dae6e0;
+
+  .ant-table-thead > tr > th {
+    .text-muted;
+  }
+}
+
+//我的询价单tab
+.my-inquiry-tab {
+  background: #FFFAF0;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
+  a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    border: none;
+  }
+  button {
+    margin-right: 30px;
+  }
+  .active {
+    .text-primary;
+    .bg-white;
+    border: none;
+    border-bottom: solid 2px @primaryColor;
+  }
+}
+
+//询价单附件图片
+.att-image {
+  .att-image-item {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-right: 16px;
+    &:hover {
+      .att-image-masker {
+        display: block;
+      }
+    }
+  }
+  .att-image-masker {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 80px;
+    color: white;
+    .h3;
+    text-align: center;
+    background: rgba(0, 0, 0, .3)
+  }
+}
+
+//我的询价单tab
+.my-collection-tab {
+  background: #FFFAF0;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
+  a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    margin-right: 30px;
+    .text-muted;
+  }
+  .active {
+    .text-primary;
+    .bg-white;
+    border-bottom: solid 2px @primaryColor;
+  }
+}
+
+.buy-price-card {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 100px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px #dae6e0;
+  -moz-box-shadow: 0 0 10px #dae6e0;
+  box-shadow: 0 0 10px #dae6e0;
+  background-color: #ffffff;
+  overflow: hidden;
+  padding: 24px 0;
+}
+
+.buy-price-card:not(:nth-child(3n)) {
+  margin-right: 38px;
+}
+
+.buy-price-card:nth-child(n+4) {
+  margin-top: 30px;
+}
+
+.buy-price-card:hover {
+  border: solid 1px #f97f27;
+}
+
+.buy-price-card.active {
+  border: solid 1px #f97f27;
+  background: #fff9f4;
+}
+
+.buy-price-card .price {
+  color: #f97f27;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+  margin-top: 8px !important;
+}
+
+.buy-price-card .flag {
+  position: absolute;
+  top: -10px;
+  right: -30px;
+  display: block;
+  width: 80px;
+  height: 40px;
+  color: white;
+  font-size: 8px;
+  text-align: center;
+  background: #f97f27;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  padding-top: 20px;
+}
+
+.myIncomeCashMenu {
+  height: 200px;
+  padding: 36px 150px 36px 0;
+  position: relative;
+  .cashItem {
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+  }
+  .cashBtnPosition {
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+  }
+  .cashBtn, .integralBtn {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 0 5px @primaryColor;
+  }
+  .integralRecord {
+    position: absolute;
+    right: -120px;
+    bottom: 0;
+  }
+  .cashTip {
+    width: 260px;
+    height: 100px;
+    border-radius: 2px;
+    padding: 10px 12px 12px 10px;
+    box-shadow: 0 0 10px 0 #dae6e0;
+    border: 1px solid #eee;
+    position: absolute;
+    right: 34px;
+    top: 130px;
+    .arrow {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      top: -13px;
+      left: 30px;
+      * {
+        display: block;
+        border-width: 6px;
+        position: absolute;
+        border-style: solid dashed dashed dashed;
+        font-size: 0;
+        line-height: 0;
+      }
+      em {
+        border-color: transparent transparent #eee transparent;
+      }
+      span {
+        border-color: transparent transparent #fff transparent;
+        top: 2px;
+      }
+    }
+  }
+  .recommondSellerImg {
+    position: absolute;
+    top: 20px;
+    right: -10px;
+    cursor: pointer;
+  }
+}
+
+//输入验证码弹框
+.smsCodeInputMask {
+  width: 350px;
+  margin: 0 auto;
+  input {
+    border: none;
+    outline: none;
+    width: 72px;
+    height: 100px !important;
+    line-height: 100px !important;
+    font-size: 70px;
+    background: #fffcf0;
+    text-align: center;
+    &:focus {
+      border: none;
+      outline: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+    & + input {
+      margin-left: 20px;
+    }
+  }
+}
+
+.linePoints {
+  width: 100%;
+  height: 1px;
+  background: #e6e6e6;
+  vertical-align: middle;
+}
+
+.intrgralText {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+}
+
+.getPointsWrapper {
+  position: relative;
+  padding-right: 16px;
+  .getPoints {
+    position: absolute;
+    left: -10px;
+    top: 20px;
+  }
+}
+
+.feedBackMenu {
+  p {
+    margin: 0
+  }
+}
+
+.feedBackForm {
+  .ant-form-item-label {
+    text-align: left;
+    label {
+      font-size: 16px;
+    }
+  }
+  .ant-form-item {
+    margin: 0 0 34px;
+  }
+  .ant-upload-picture-card-wrapper {
+    display: block !important;
+  }
+  .ant-upload-list-item-error {
+    border-color: #e6e6e6
+  }
+}
+
+.feedBackMenu {
+  border-bottom: 1px solid #e6e6e6;
+  .questionability {
+    color: #f08455;
+  }
+}
+
+.feedBackDes {
+  .text {
+    vertical-align: top;
+  }
+}
+
+.feedBackReply {
+  padding: 20px 28px;
+  background: #fafafa;
+  border-left: 4px solid rgba(255, 180, 50, .5);
+}
+
+.feedWrapper {
+  height: 80px;
+}
+
+.feedImg {
+  position: relative;
+  padding-top: 20px;
+  img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    /*margin-top:20px;*/
+  }
+  &:hover {
+    .feedImg-masker {
+      display: block;
+    }
+  }
+  .feedImg-masker {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    color: white;
+    .h3;
+    text-align: center;
+    background: rgba(0, 0, 0, .3)
+  }
+}
+
+.pay-result {
+  height: 766px;
+  background: white;
+  padding-top: 150px;
+  text-align: center;
+}
+
+
+.menu-panel button + button {
+  margin-left: 14px;
+}

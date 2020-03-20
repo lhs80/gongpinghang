@@ -1,0 +1,596 @@
+/*---通用样式定义---*/
+/*---label宽度---*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1 !important;
+}
+#__next {
+  height: 100%;
+}
+i,
+em {
+  font-style: normal;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+a:link,
+a:hover,
+a:active,
+a:visited {
+  border: none;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffb432 !important;
+}
+.bg-grey {
+  background: #f0f3ef;
+}
+.bg-primary {
+  background: #ffb432 !important;
+}
+.bg-lightgrey {
+  background: #fafafa;
+}
+.bg-white {
+  background: #fff !important;
+}
+.bg-primary-linear {
+  background: -webkit-linear-gradient(right, #F56A2B, #FFB432) !important;
+}
+.bg-primary-linear:hover,
+.bg-primary-linear:active,
+.bg-primary-linear::selection,
+.bg-primary-linear:visited {
+  background: -webkit-linear-gradient(right, #F56A2B, #FFB432);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.bg-primary-linear:disabled {
+  background: #e2e2e2 !important;
+}
+.bg-blue-linear {
+  border: none !important;
+  background: -webkit-linear-gradient(right, #3BA7EB, #508CF8);
+}
+.bg-blue-linear:hover {
+  border: none !important;
+  background: -webkit-linear-gradient(right, #3BA7EB, #508CF8);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 1;
+  font-weight: normal;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h4,
+.h4 {
+  font-size: 16px;
+}
+h3,
+.h3 {
+  font-size: 18px;
+}
+h2,
+.h2 {
+  font-size: 20px;
+}
+h1,
+.h1 {
+  font-size: 22px;
+}
+.h0 {
+  font-size: 24px;
+}
+.large {
+  font-size: 28px;
+}
+.block {
+  display: block !important;
+}
+.show {
+  display: inline-block !important;
+}
+.hide {
+  display: none !important;
+}
+.text-primary {
+  color: #ffb432 !important;
+}
+.text-primary-linear {
+  background-image: -webkit-linear-gradient(right, #F56A2B, #FFB432);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-secondary {
+  color: #666;
+}
+.text-grey {
+  color: #353a46;
+}
+.text-darkgrey {
+  color: #303133;
+}
+.text-lightgrey {
+  color: #909399;
+}
+.text-muted {
+  color: #909090;
+}
+.text-white {
+  color: #fff !important;
+}
+.text-black {
+  color: black;
+}
+.text-info {
+  color: #457acf;
+}
+.text-plus {
+  color: #508CF8;
+}
+.text-warning {
+  color: #ffb300;
+}
+.text-warn {
+  color: #F08455;
+}
+.text-danger {
+  color: #F75D39;
+}
+.text-hover:hover {
+  color: #ffb432 !important;
+}
+.text-ellipsis {
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.mt1 {
+  margin-top: 10px !important;
+}
+.mt2 {
+  margin-top: 20px !important;
+}
+.mt3 {
+  margin-top: 30px !important;
+}
+.mt4 {
+  margin-top: 40px !important;
+}
+.mt5 {
+  margin-top: 50px !important;
+}
+.mt10 {
+  margin-top: 100px !important;
+}
+.mt8 {
+  margin-top: 80px !important;
+}
+.mt6 {
+  margin-top: 60px !important;
+}
+.p5 {
+  padding: 50px !important;
+}
+.prl5 {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+.ptb5 {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+.p6 {
+  padding: 60px !important;
+}
+.prl6 {
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+.ptb6 {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+.p4 {
+  padding: 40px !important;
+}
+.prl4 {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+.ptb4 {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+.p3 {
+  padding: 30px !important;
+}
+.prl3 {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+.ptb3 {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+.p2 {
+  padding: 20px !important;
+}
+.prl2 {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.ptb2 {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+.p1 {
+  padding: 10px !important;
+}
+.prl1 {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.ptb1 {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+.border-radius {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.border-circle {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+.break {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.maxWidth {
+  width: 1220px;
+  margin: 0 auto;
+}
+.border-color {
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+}
+.iconfont {
+  line-height: 0.7 !important;
+  vertical-align: middle;
+}
+button .anticon {
+  line-height: 0.7 !important;
+  vertical-align: middle;
+}
+.accountWrapper {
+  touch-action: none;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  z-index: 1000;
+}
+.accountWrapper .accountCur {
+  width: 400px;
+  height: 460px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.accountWrapper .accountCur .accountTop {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 30px;
+  background: #1f9a5d;
+  border-radius: 8px 8px 0 0;
+}
+.accountWrapper .accountCur .accountTop .closeAccount {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  top: 14px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+}
+.accountWrapper .accountCur .accountTop .headImg {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+.accountWrapper .accountCur .accountTop .headImg img {
+  width: 100%;
+  height: 100%;
+}
+.accountWrapper .accountCur .accountMid {
+  height: 308px;
+  padding: 10px 20px;
+  overflow: auto;
+}
+.accountWrapper .accountCur .accountMid .msgOther {
+  width: 100%;
+}
+.accountWrapper .accountCur .accountMid .msgOther .otherImg {
+  width: 32px;
+  height: 32px;
+  vertical-align: top;
+}
+.accountWrapper .accountCur .accountMid .toInfo .msg {
+  margin-left: 10px;
+  position: relative;
+}
+.accountWrapper .accountCur .accountMid .toInfo .msg .arrow {
+  left: -13px;
+}
+.accountWrapper .accountCur .accountMid .toInfo .msg .arrow * {
+  border-style: solid dashed dashed dashed;
+}
+.accountWrapper .accountCur .accountMid .toInfo .msg .arrow em {
+  border-color: transparent #fff transparent transparent;
+}
+.accountWrapper .accountCur .accountMid .toInfo .msg .arrow span {
+  border-color: transparent #f3f3f3 transparent transparent;
+  top: 2px;
+}
+.accountWrapper .accountCur .accountMid .msgMe {
+  margin: 10px 0;
+}
+.accountWrapper .accountCur .accountMid .msgMe .msg {
+  position: relative;
+  float: right;
+  background: #e5f6ef;
+  margin-right: 10px;
+}
+.accountWrapper .accountCur .accountMid .msgMe .msg .arrow {
+  right: -13px;
+}
+.accountWrapper .accountCur .accountMid .msgMe .msg .arrow * {
+  border-style: solid dashed dashed dashed;
+}
+.accountWrapper .accountCur .accountMid .msgMe .msg .arrow em {
+  border-color: transparent transparent transparent #fff;
+}
+.accountWrapper .accountCur .accountMid .msgMe .msg .arrow span {
+  border-color: transparent transparent transparent #e5f6ef;
+  top: 2px;
+}
+.accountWrapper .accountCur .accountMid .msgMe .meImg {
+  float: right;
+}
+.accountWrapper .accountCur .accountMid .msgMe:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.accountWrapper .accountCur .accountMid .msg {
+  max-width: 200px;
+  background: #f3f3f3;
+  padding: 10px 14px;
+  border: 1px solid #eee;
+  position: absolute;
+}
+.accountWrapper .accountCur .accountMid .msg .arrow {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 8px;
+}
+.accountWrapper .accountCur .accountMid .msg .arrow * {
+  display: block;
+  border-width: 6px;
+  position: absolute;
+  font-size: 0;
+  line-height: 0;
+}
+.accountWrapper .accountCur .accountMid .msg .emoji {
+  width: 24px !important;
+}
+.accountWrapper .accountCur .accountMid .msg .msgBox {
+  line-height: 20px;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all;
+  font-size: 14px;
+}
+.accountWrapper .accountCur .accountMid .msg .msgBox img {
+  width: 100%;
+}
+.accountWrapper .accountCur .accountMid .msg .msgBox .fileName {
+  vertical-align: top;
+  margin-top: 10px;
+}
+.accountWrapper .accountCur .accountMid .sendTime {
+  margin: 0;
+  height: 30px;
+  line-height: 30px;
+}
+.accountWrapper .accountCur .accountMid .moreData {
+  cursor: pointer;
+}
+.accountWrapper .accountCur .accountFooter {
+  height: 100px;
+  border-top: 1px solid #e6e6e6;
+  position: relative;
+}
+.accountWrapper .accountCur .accountFooter .iconItem {
+  font-size: 24px;
+  margin-right: 20px;
+  color: #999;
+}
+.accountWrapper .accountCur .accountFooter .sendContent {
+  resize: none;
+  border: none;
+}
+.accountWrapper .accountCur .accountFooter .sendContent:focus {
+  box-shadow: 0 0 0 -2px #fff;
+}
+.accountWrapper .accountCur .accountFooter .sendInfoBtn {
+  position: absolute;
+  bottom: 10px;
+  right: 30px;
+  border: 1px solid #ffb432;
+}
+.accountWrapper .accountCur .accountFooter .fileImg {
+  position: relative;
+}
+.accountWrapper .accountCur .accountFooter #fileToSent {
+  position: absolute;
+}
+/*----表情包-----*/
+.m-chat-emoji {
+  position: absolute;
+  bottom: 30px;
+  height: 200px;
+  left: -20px;
+  width: 380px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.m-chat-emoji .emoji-channel {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 10px;
+}
+.m-chat-emoji .emoji-channel .emoji-album {
+  display: inline-block;
+  padding: 10px;
+  width: 180px;
+  height: 180px;
+  border-right: 1px solid #f0f0f0;
+}
+.m-chat-emoji .emoji-channel .emoji-album img {
+  margin: 0;
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+.m-chat-emoji .emoji-channel .emoji-album.active {
+  background-color: #f0f0f0;
+}
+.m-chat-emoji .emoji-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  overflow-y: auto;
+}
+.m-chat-emoji .emoji-content .cnt {
+  position: relative;
+  display: block;
+  padding: 0 0 10px 16px;
+  text-align: left;
+}
+.m-chat-emoji .emoji-content .cnt span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 10px 10px 0 0;
+  cursor: pointer;
+}
+.m-chat-emoji .emoji-content .cnt img {
+  width: 100%;
+  height: 100%;
+}
+.m-chat-emoji .emoji-content .emoji-item {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  padding: 2px;
+  vertical-align: middle;
+}
+.m-chat-emoji .emoji-content .emoji-item img {
+  width: inherit;
+  height: inherit;
+}
+.m-chat-emoji .emoji-content .pinup-item {
+  width: 44px;
+  height: 44px;
+}
+.messageDel {
+  position: relative;
+  width: 300px;
+}
+.messageDel .sessionDel {
+  position: absolute;
+  left: 340px;
+  width: 50px;
+  top: 16px;
+}
+.material-detail {
+  background: #fff !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -o-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  padding: 16px;
+  margin-top: 16px;
+}
+.material-detail .material-detail-img {
+  width: 360px;
+  height: 360px;
+  overflow: hidden;
+}
+.material-detail .material-detail-img img {
+  width: 100%;
+  height: 100%;
+}
+.material-detail .material-detail-info {
+  -webkit-box-flex: 1;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1;
+  /* OLD - Firefox 19- */
+  -webkit-flex: 1;
+  /* Chrome */
+  -ms-flex: 1;
+  /* IE 10 */
+  flex: 1;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  margin-left: 20px;
+}
+.material-detail .material-detail-info .material-detail-info-sub {
+  background: #f2faf7;
+  padding: 18px 0 18px 28px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}

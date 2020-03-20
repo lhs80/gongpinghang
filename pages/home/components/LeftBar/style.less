@@ -1,0 +1,24 @@
+@import "../../../../static/base.less";
+
+.bar-wrapper {
+  width: 60px;
+  height: 418px;
+  position: fixed;
+  left: 50%;
+  margin-left: -680px;
+  z-index: 99;
+  top:220px;
+  bottom: 435px;
+  li {
+    height: 60px;
+    text-align: center;
+    background: #f5f5f5;
+    &:not(:last-child) {
+      padding: 10px;
+    }
+    &:last-child {
+      line-height: 60px;
+      background: white;
+    }
+  }
+}

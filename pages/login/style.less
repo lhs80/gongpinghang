@@ -1,0 +1,187 @@
+@import "../../static/base.less";
+
+.login-layout {
+
+  &.login-layout-bg {
+    background: url("/static/images/bg-regist.png") #fffbf4;
+  }
+
+  //登录页和绑定手机码号内容部分
+  .login-content {
+    position: relative;
+    min-width: 1220px;
+    height: 730px;
+    max-height: 730px;
+    -webkit-background-size: revert;
+    background-size: revert;
+    //margin-top: 50px;
+    &.login-content-bg {
+      background: url("/static/images/bg.png") no-repeat center center;
+    }
+
+    //绑定手机号码标题
+    .login-bind-title {
+      width: 500px;
+      color: #353a46;
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1;
+      margin: 0 auto;
+      padding: 50px 0 52px;
+      background: white;
+      -webkit-border-radius: 2px 2px 0 0;
+      -moz-border-radius: 2px 2px 0 0;
+      border-radius: 2px 2px 0 0;
+    }
+
+    //绑定手机号码表单
+    .login-bind-form {
+      width: 500px;
+      height: 408px;
+      margin: 0 auto;
+      padding: 0 82px 0 14px;
+      background: white;
+      -webkit-border-radius: 0 0 2px 2px;
+      -moz-border-radius: 0 0 2px 2px;
+      border-radius: 0 0 2px 2px;
+      .btn-sendCode {
+        font-size: 14px;
+        background: #fff !important;
+      }
+      .bind-form-submit {
+        width: 300px;
+        margin: 60px auto 0;
+      }
+    }
+    .login-content-form {
+      position: absolute;
+      top: 50%;
+      right: 20%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      width: 470px;
+      height: 450px;
+      background: #fff;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      overflow: hidden;
+      .login-content-form-top {
+        height: 450px;
+        background: #fff;
+        //padding: 70px 40px 54px 40px;
+        .ant-tabs-nav.ant-tabs-nav-animated {
+          width: 100%;
+          text-align: center;
+          .h2
+        }
+        .ant-tabs-nav-scroll {
+          padding: 0 22px;
+        }
+        .ant-tabs-ink-bar {
+          left: 40px;
+        }
+        .ant-tabs-tab {
+          text-align: center;
+          padding: 0 0 10px 0;
+        }
+        .login-form-button {
+          border-radius: 100px;
+          height: 50px;
+          margin-top: 60px;
+        }
+        .ant-input {
+          background: #EBEEF5;
+          border-radius: 100px;
+          border: none;
+          height: 50px !important;
+          padding-left: 27px;
+        }
+        .ant-input-affix-wrapper .ant-input:not(:first-child) {
+          padding-left: 42px;
+        }
+        .ant-tabs-bar {
+          margin: 0 !important;
+        }
+        .btn-sendCode {
+          font-size: 16px;
+        }
+      }
+      .login-content-form-bottom {
+        height: 60px;
+        padding: 6px 0 0 9px;
+
+        .iconfont {
+          font-size: 24px;
+          margin-top: 10px;
+          outline: none;
+        }
+        .iconfont-weixin-copy {
+          color: #6bbc11;
+        }
+        .iconfont-QQ {
+          color: #4685d2;
+        }
+        .iconfont-xinlangweibo {
+          color: #f9486e;
+        }
+      }
+      .login-switch {
+        width: 52px;
+        height: 52px;
+        line-height: 52px;
+        position: absolute;
+        right: 5px;
+        top: 8px;
+        div {
+          width: 52px;
+          height: 52px;
+        }
+        .scanCode {
+          background: url("/static/images/scanCode.png") no-repeat;
+        }
+        .computerLogin {
+          background: url("/static/images/computerLogin.png") no-repeat;
+        }
+      }
+      .login-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+      }
+      .qRcode {
+        width: 160px;
+        height: 160px;
+        border: 1px solid #ccc;
+        margin: 0 auto;
+      }
+      .refreshCode {
+        position: absolute;
+        top: 132px;
+        left: 110px;
+        width: 160px;
+        height: 160px;
+        padding-top: 50px;
+        background: rgba(0, 0, 0, 0.6);
+      }
+      .successLogin {
+        height: 152px;
+        background: url("/static/images/safeLogin.png") no-repeat center;
+      }
+    }
+  }
+}
+
+.login-form {
+  .mt5;
+  a:hover {
+    color: #01af58;
+  }
+}

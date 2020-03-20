@@ -1,0 +1,914 @@
+/*---通用样式定义---*/
+/*---label宽度---*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1 !important;
+}
+#__next {
+  height: 100%;
+}
+i,
+em {
+  font-style: normal;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+a:link,
+a:hover,
+a:active,
+a:visited {
+  border: none;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffb432 !important;
+}
+.bg-grey {
+  background: #f0f3ef;
+}
+.bg-primary {
+  background: #ffb432 !important;
+}
+.bg-lightgrey {
+  background: #fafafa;
+}
+.bg-white {
+  background: #fff !important;
+}
+.bg-primary-linear {
+  background: -webkit-linear-gradient(right, #F56A2B, #FFB432) !important;
+}
+.bg-primary-linear:hover,
+.bg-primary-linear:active,
+.bg-primary-linear::selection,
+.bg-primary-linear:visited {
+  background: -webkit-linear-gradient(right, #F56A2B, #FFB432);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.bg-primary-linear:disabled {
+  background: #e2e2e2 !important;
+}
+.bg-blue-linear {
+  border: none !important;
+  background: -webkit-linear-gradient(right, #3BA7EB, #508CF8);
+}
+.bg-blue-linear:hover {
+  border: none !important;
+  background: -webkit-linear-gradient(right, #3BA7EB, #508CF8);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 1;
+  font-weight: normal;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h4,
+.h4 {
+  font-size: 16px;
+}
+h3,
+.h3 {
+  font-size: 18px;
+}
+h2,
+.h2 {
+  font-size: 20px;
+}
+h1,
+.h1 {
+  font-size: 22px;
+}
+.h0 {
+  font-size: 24px;
+}
+.large {
+  font-size: 28px;
+}
+.block {
+  display: block !important;
+}
+.show {
+  display: inline-block !important;
+}
+.hide {
+  display: none !important;
+}
+.text-primary {
+  color: #ffb432 !important;
+}
+.text-primary-linear {
+  background-image: -webkit-linear-gradient(right, #F56A2B, #FFB432);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-secondary {
+  color: #666;
+}
+.text-grey {
+  color: #353a46;
+}
+.text-darkgrey {
+  color: #303133;
+}
+.text-lightgrey {
+  color: #909399;
+}
+.text-muted {
+  color: #909090;
+}
+.text-white {
+  color: #fff !important;
+}
+.text-black {
+  color: black;
+}
+.text-info {
+  color: #457acf;
+}
+.text-plus {
+  color: #508CF8;
+}
+.text-warning {
+  color: #ffb300;
+}
+.text-warn {
+  color: #F08455;
+}
+.text-danger {
+  color: #F75D39;
+}
+.text-hover:hover {
+  color: #ffb432 !important;
+}
+.text-ellipsis {
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.mt1 {
+  margin-top: 10px !important;
+}
+.mt2 {
+  margin-top: 20px !important;
+}
+.mt3 {
+  margin-top: 30px !important;
+}
+.mt4 {
+  margin-top: 40px !important;
+}
+.mt5 {
+  margin-top: 50px !important;
+}
+.mt10 {
+  margin-top: 100px !important;
+}
+.mt8 {
+  margin-top: 80px !important;
+}
+.mt6 {
+  margin-top: 60px !important;
+}
+.p5 {
+  padding: 50px !important;
+}
+.prl5 {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+.ptb5 {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+.p6 {
+  padding: 60px !important;
+}
+.prl6 {
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+.ptb6 {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+.p4 {
+  padding: 40px !important;
+}
+.prl4 {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+.ptb4 {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+.p3 {
+  padding: 30px !important;
+}
+.prl3 {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+.ptb3 {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+.p2 {
+  padding: 20px !important;
+}
+.prl2 {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.ptb2 {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+.p1 {
+  padding: 10px !important;
+}
+.prl1 {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.ptb1 {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+.border-radius {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.border-circle {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+.break {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.maxWidth {
+  width: 1220px;
+  margin: 0 auto;
+}
+.border-color {
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+}
+.iconfont {
+  line-height: 0.7 !important;
+  vertical-align: middle;
+}
+button .anticon {
+  line-height: 0.7 !important;
+  vertical-align: middle;
+}
+/*----form表单下的input----*/
+.myForm input {
+  height: 50px;
+}
+.myForm .ant-input-search-button {
+  height: 50px;
+}
+.myForm .companyName {
+  position: relative;
+}
+.myForm .companyName .companyTip {
+  position: absolute;
+  right: -150px;
+  top: -10px;
+}
+.myForm .companyName .company-search-suggest {
+  position: absolute;
+  left: 0;
+  top: 34px;
+  width: 300px;
+  background: #fff;
+  box-shadow: 0 0 10px 0 #dae6e0;
+  border-radius: 2px;
+  z-index: 22;
+}
+.myForm .companyName .company-search-suggest h5 {
+  width: 300px;
+  height: 40px;
+  padding: 0 20px !important;
+  line-height: 40px;
+}
+.myForm .companyName .company-search-suggest h5:hover {
+  background: rgba(0, 166, 95, 0.1);
+}
+.myForm .companyName .ant-input-suffix {
+  display: none;
+}
+.myForm .ant-form-item-label {
+  line-height: 50px;
+}
+.myForm .ant-select-selection {
+  height: 50px;
+}
+.myForm .ant-select-selection__rendered {
+  line-height: 50px;
+  margin: 0 6px;
+}
+.myForm .ant-select-selection__rendered .ant-select-selection-selected-value {
+  padding-right: 0;
+}
+.myForm .ant-select-selection-selected-value {
+  width: 60px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.myForm .ant-select-arrow {
+  right: 4px;
+}
+/*--更改手机号码---*/
+.setUser {
+  width: 100px;
+  height: 100px;
+}
+/*----手机号码更改成功----*/
+.makePhone {
+  font-size: 80px;
+  color: #18bcc9;
+}
+/*----个人认证----*/
+.personalAuthMenu {
+  width: 560px;
+  height: 284px;
+  margin: 60px 0 0 212px;
+}
+.companyAuthMenu {
+  width: 780px;
+}
+.companyAuthMenu .infoAutherCom {
+  position: absolute;
+  font-size: 120px;
+  color: #316ccb;
+  right: 150px;
+  top: 50px;
+}
+.companyAuthMenu .auther {
+  display: inline-block;
+  background: #ebf7dd;
+  border-radius: 12px;
+  color: #66BB6A;
+  width: 100px;
+  height: 24px;
+  margin-left: 20px;
+  line-height: 24px;
+  font-size: 14px;
+}
+.companyAuthMenu .manager {
+  display: inline-block;
+  background: rgba(0, 166, 95, 0.1);
+  color: #00A65F;
+  width: 70px;
+  height: 24px;
+  text-align: center;
+  margin-left: 10px;
+  line-height: 24px;
+  border-radius: 12px;
+}
+.personalAuth {
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 #dae6e0;
+  position: relative;
+}
+.personalAuth .infoAuther {
+  position: absolute;
+  font-size: 120px;
+  color: rgba(1, 175, 88, 0.5);
+  right: 60px;
+  top: 56px;
+}
+.personalHead {
+  height: 60px;
+  border-radius: 8px 8px 0 0;
+  background: linear-gradient(to left, #418de0, #28b3b8);
+}
+.personalMenu {
+  display: flex;
+  align-items: center;
+}
+.personalMenu .personalMenuL {
+  width: 254px;
+}
+.personalMenu .personalMenuL img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.personalMenu .personalMenuR {
+  flex: 1;
+  font-size: 20px;
+}
+.personalMenu .personalMenuR .curLine {
+  height: 40px;
+  line-height: 40px;
+}
+.personalMenu .personalMenuR .infoRight {
+  margin-right: 35px;
+  color: #999;
+  font-size: 20px;
+}
+.ant-form-item-required:before {
+  content: "" !important;
+}
+/*-----账户资料-----*/
+.accountImgMenu {
+  width: 166px;
+}
+.accountImgMenu p {
+  margin: 0;
+}
+.imgBtn {
+  float: right;
+}
+.accountDatumBtn {
+  color: #ffb432;
+  border: 1px solid #ffb432 !important;
+  width: 120px;
+}
+.accountImg {
+  width: 100px;
+  height: 100px;
+  vertical-align: top;
+}
+.accountDatumWrapper {
+  border-top: 1px solid #e6e6e6;
+}
+.accountDatumWrapper .userInfoRight {
+  float: right;
+}
+.accountDatumWrapper .userInfoRight .passIcon {
+  position: absolute;
+  top: 10px;
+  right: 200px;
+}
+.accountDatumWrapper .userInfoRight .validateOk {
+  margin: 0 20px 0 8px;
+}
+.accountDatumWrapper .userInfoLeft {
+  line-height: 40px;
+}
+/*-------企业初级认证------*/
+.firstAuther {
+  width: 300px;
+  margin: 0 auto;
+  background: #ccc;
+}
+.modalAuther {
+  width: 480PX;
+}
+.modalAuther .iconTip {
+  font-size: 50px;
+  margin: 30px auto;
+}
+.modalAuther .ant-modal-footer button:first-child {
+  display: none;
+}
+.modalAuther .ant-modal-footer button {
+  width: 300px;
+}
+/*-----设置资料里的企业认证弹窗---设置资料首页-*/
+.companyAuther {
+  width: 640px !important;
+}
+.companyAuther .ant-modal-footer button {
+  display: none;
+}
+.companyAuther .authMenu {
+  height: 382px;
+}
+.companyAuther .ant-modal-header {
+  text-align: center;
+  padding: 30px 24px;
+  border-bottom: inherit;
+}
+.companyAuther .ant-modal-header .ant-modal-title {
+  font-size: 22px;
+}
+.companyAuther .ant-modal-body {
+  padding: 0 40px;
+}
+.companyFirst {
+  background: linear-gradient(to right, #00a760, #00b789);
+}
+.companyDipth {
+  background: linear-gradient(to right, #316ccb, #0097a9);
+}
+.companyAutherLine {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.companyAutherLine .authMenuLeft {
+  font-weight: bold;
+}
+.companyAutherLine .allAutherText {
+  position: relative;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 24px;
+}
+.companyAutherLine .allAutherText span {
+  position: absolute;
+  left: -10px;
+  top: -2px;
+}
+/*-----企业深度认证-----*/
+.searchAuthImg {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #eee;
+  background: #fafafa;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.businessLicence {
+  position: relative;
+}
+.businessLicence .authDescript {
+  position: absolute;
+  width: 330px;
+  left: 110px;
+  top: 0;
+}
+.businessLicence .authDescript p {
+  line-height: 16px;
+}
+.phoneDescript {
+  line-height: 20px;
+}
+.autherPic {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  border-radius: 2px;
+}
+.avatarAuther {
+  width: 100px;
+  height: 100px;
+}
+.legalSelect {
+  width: 450px;
+  margin: 0 auto;
+}
+.depthForm .ant-form-item-label label {
+  width: 100%;
+  white-space: normal;
+}
+.depthForm .legalItem .ant-form-item-label {
+  line-height: 20px;
+  padding-right: 4px;
+}
+.depthSubmit {
+  box-shadow: 0 0 10px 0 #dae6e0;
+}
+.depthSubmit .ant-row {
+  height: 40px;
+}
+.depthSubmit .ant-row div {
+  text-align: left;
+}
+.depthSubmit .ant-row :last-child {
+  color: #38414c;
+}
+.depthModal .ant-modal-body {
+  padding: 40px 40px 0 40px;
+}
+.seacrhExample .ant-modal-footer {
+  display: none;
+}
+.depthFormFirst .ant-input-disabled {
+  color: #38414c;
+}
+/*--------查看认证-----*/
+.depthStatus {
+  width: 300px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+.depthStatus .iconPosition {
+  position: absolute;
+  left: 88px;
+}
+.depthStatus .iconPositionN {
+  position: absolute;
+  left: 60px;
+}
+.depthStatus .signCompany {
+  width: 120px;
+}
+.verticalTop {
+  vertical-align: top;
+}
+.searchAnsower {
+  width: 780px;
+  height: 160px;
+  background: #fafafa;
+  padding: 30px 0 30px 40px;
+}
+.searchAnsower .iconLeft {
+  vertical-align: top;
+  margin-right: 20px;
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+/*----收货地址---*/
+.receivindAddress .topBar {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 30px;
+}
+.receivindAddress .addressInfo {
+  position: relative;
+  padding-left: 30px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.receivindAddress .addressInfo:nth-child(even) {
+  background: #fafafa;
+}
+.receivindAddress .addressInfo .operationIcon {
+  vertical-align: middle;
+}
+.receivindAddress .defaultAddress {
+  /*margin-right:10px;
+    vertical-align: top;*/
+  position: absolute;
+  right: 10px;
+  top: 16px;
+  cursor: pointer;
+}
+/*----新增收货地址----*/
+.addAddress .addTitle {
+  border-left: 4px solid #ffb432;
+}
+.ant-select-selection-selected-value,
+.ant-select-dropdown-menu-item {
+  text-overflow: clip;
+}
+/*----步骤条-----*/
+.settingStep .ant-steps-item-wait .ant-steps-item-icon {
+  background: #999;
+  border-color: #999;
+}
+.settingStep .ant-steps-item-wait .ant-steps-item-icon .ant-steps-icon {
+  color: #fff;
+}
+.settingStep .ant-steps-item-wait .ant-steps-item-content .ant-steps-item-title {
+  color: #38414c;
+}
+.settingStep .ant-steps-item-process .ant-steps-item-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+.settingStep .ant-steps-item-title {
+  padding-right: 6px;
+}
+.seting-slider .textColor {
+  color: #00a65f !important;
+}
+.settingTips .ant-tooltip-inner {
+  background: #ffff;
+  box-shadow: 0 0 10px 0 #dae6e0;
+  color: #666;
+}
+.settingTips .ant-tooltip-arrow {
+  border-top-color: #e0e3e6;
+}
+.cashTip {
+  max-width: 250px;
+  border-radius: 2px;
+  padding: 6px 10px;
+  box-shadow: 0 0 10px 0 #dae6e0;
+  border: 1px solid #eee;
+  position: absolute;
+  bottom: 44px;
+  left: -20px;
+}
+.cashTip .arrow {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  bottom: -14px;
+  left: 22px;
+}
+.cashTip .arrow * {
+  display: block;
+  border-width: 6px;
+  position: absolute;
+  border-style: solid dashed dashed dashed;
+  font-size: 0;
+  line-height: 0;
+}
+.cashTip .arrow em {
+  border-color: #eee transparent transparent transparent;
+}
+.cashTip .arrow span {
+  border-color: #fff transparent transparent transparent;
+  top: -2px;
+}
+.searchTip {
+  left: 70px;
+}
+.addAddress .addTitle {
+  border-left: 4px solid #ffb432;
+}
+.addressMwrapper {
+  width: 640px;
+  height: 610px;
+  margin: -305px 0 0 -320px;
+  background: #fafafa;
+}
+.addressMwrapper .addressInfo {
+  margin: 34px 0 26px 0;
+  height: 424px;
+  overflow-y: scroll;
+}
+.addressMwrapper .addressInfo .lineAddress {
+  min-height: 90px;
+  background: #fff;
+  display: flex;
+  margin: 10px 30px 16px;
+  align-items: center;
+  position: relative;
+}
+.addressMwrapper .addressInfo .lineAddress:hover {
+  box-shadow: 0 0 10px #dae6e0;
+  background: #f2faf7;
+  cursor: pointer;
+}
+.addressMwrapper .addressInfo .lineAddress .defaultAddress {
+  position: absolute;
+  width: 80px;
+  height: 24px;
+  right: 24px;
+  top: 12px;
+  border-radius: 12px;
+  color: #66bb6a;
+  background: #ebf7dd;
+}
+.addressMwrapper .addressInfo .activeAddress {
+  box-shadow: 0 0 10px #dae6e0;
+  background: #f2faf7;
+}
+.addressMwrapper .addressInfo .headerImg {
+  width: 80px;
+}
+.addressMwrapper .addressInfo .customerInfo {
+  display: flex;
+  align-items: center;
+}
+.addBusiness {
+  background: rgba(0, 0, 0, 0.65);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.addBusiness .sellerWrapper {
+  width: 1000px;
+  height: 680px;
+  padding: 30px 40px;
+  background: #fff;
+  margin: -305px 0 0 -500px;
+}
+.addBusiness .sellerWrapper .business-shopLogo {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+}
+.addBusiness .sellerWrapper .business-shopLogo .tipText {
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  left: 50%;
+  top: 0;
+  margin: 0 0 0 -15px;
+}
+.addBusiness .commonWrapper {
+  border-radius: 8px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.addBusiness .commonWrapper .closeBtn {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  top: 20px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #999;
+}
+.addBusiness .commonWrapper .sellerSearch .ant-input-suffix button {
+  height: 40px;
+  font-size: 20px;
+}
+.addBusiness .commonWrapper .businessInfo {
+  display: flex;
+  align-items: center;
+}
+.addBusiness .commonWrapper .businessInfo p {
+  margin: 0;
+}
+.addBusiness .commonWrapper .businessInfo .nameDescribed {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+.addBusiness .commonWrapper .businessInfo .nameDescribed img {
+  width: 40px;
+  height: 40px;
+}
+.addBusiness .commonWrapper .sellerType .ant-menu {
+  margin-left: -12px;
+}
+.addBusiness .commonWrapper .sellerType .ant-menu-horizontal {
+  line-height: 14px;
+}
+.addBusiness .commonWrapper .sellerType .ant-menu-item-selected {
+  border: none;
+}
+.addBusiness .commonWrapper .sellerType .ant-menu-item {
+  border: 1px solid #fff;
+  padding: 0 14px;
+}
+.addBusiness .commonWrapper .sellerType .ant-menu-item:nth-child(4) {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.addBusiness .addSellerTable {
+  /*----修改----*/
+}
+.addBusiness .addSellerTable .ant-table-thead th {
+  height: 40px;
+}
+.addBusiness .addSellerTable tr td {
+  height: 56px;
+}
+.addBusiness .addSellerTable td:nth-child(3) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.addBusiness .addSellerTable .ant-table-scroll {
+  position: relative;
+}
+.addBusiness .selectSeller {
+  border: 1px solid #00a65f;
+  color: #00a65f;
+}

@@ -1,0 +1,798 @@
+@import "../../../static/base.less";
+//账户管理
+/*----form表单下的input----*/
+.myForm {
+  input {
+    height: 50px;
+  }
+  .ant-input-search-button {
+    height: 50px;
+  }
+  .companyName {
+    position: relative;
+    .companyTip {
+      position: absolute;
+      right: -150px;
+      top: -10px;
+    }
+    .company-search-suggest {
+      position: absolute;
+      left: 0;
+      top: 34px;
+      width: 300px;
+      background: #fff;
+      box-shadow: 0 0 10px 0 #dae6e0;
+      border-radius: 2px;
+      z-index: 22;
+      h5 {
+        width: 300px;
+        height: 40px;
+        padding: 0 20px !important;
+        line-height: 40px;
+        &:hover {
+          background: rgba(0, 166, 95, 0.1)
+        }
+      }
+    }
+    .ant-input-suffix {
+      display: none
+    }
+  }
+  .ant-form-item-label {
+    line-height: 50px;
+  }
+  .ant-select-selection {
+    height: 50px;
+  }
+  .ant-select-selection__rendered {
+    line-height: 50px;
+    margin: 0 6px;
+    .ant-select-selection-selected-value {
+      padding-right: 0;
+    }
+  }
+  .ant-select-selection-selected-value {
+    width: 60px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .ant-select-arrow {
+    right: 4px;
+  }
+}
+
+/*--更改手机号码---*/
+.setUser {
+  width: 100px;
+  height: 100px;
+}
+
+/*----手机号码更改成功----*/
+.makePhone {
+  font-size: 80px;
+  color: #18bcc9;
+}
+
+/*----个人认证----*/
+.personalAuthMenu {
+  width: 560px;
+  height: 284px;
+  margin: 60px 0 0 212px;
+}
+
+.companyAuthMenu {
+  width: 780px;
+  //height: 320px;
+  .infoAutherCom {
+    position: absolute;
+    font-size: 120px;
+    color: #316ccb;
+    right: 150px;
+    top: 50px;
+  }
+  .auther {
+    display: inline-block;
+    background: rgba(235, 247, 221, 1);
+    border-radius: 12px;
+    color: #66BB6A;
+    width: 100px;
+    height: 24px;
+    margin-left: 20px;
+    line-height: 24px;
+    font-size: 14px;
+  }
+  .manager {
+    display: inline-block;
+    background: rgba(0, 166, 95, 0.1);
+    color: #00A65F;
+    width: 70px;
+    height: 24px;
+    text-align: center;
+    margin-left: 10px;
+    line-height: 24px;
+    border-radius: 12px;
+  }
+}
+
+.auth-result-wrapper {
+  width: 783px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(218, 229, 224, 1);
+  position: relative;
+  .infoAuther {
+    position: absolute;
+    font-size: 120px;
+    color: rgba(1, 175, 88, 0.5);
+    right: 60px;
+    top: 56px;
+  }
+}
+
+//认证通过页面的头部
+.personalHead {
+  height: 60px;
+  border-radius: 8px 8px 0 0;
+  background: linear-gradient(to bottom, #FEC6C6, #FFF5F1);
+  .text-center;
+  color: #E12625;
+  .h3;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+.auth-result-type {
+  .h3;
+  width: 100px;
+  height: 100px;
+  .border-circle;
+  .text-center;
+  line-height: 100px;
+  .text-white;
+  margin: 37px 54px 0 0;
+  &.company {
+    background: -webkit-linear-gradient(right, #FC8068, #EF5E5D);
+  }
+  &.person {
+    background: -webkit-linear-gradient(right, #4A8ACE, #3469BE);
+  }
+}
+
+.auth-tips {
+  height: 97px;
+  line-height: 97px;
+  &.waite {
+    background: #F0F7FF;
+  }
+  &.error {
+    background: #FDF4F4;
+  }
+}
+
+.personalMenu {
+  display: flex;
+  align-items: center;
+  .personalMenuL {
+    width: 254px;
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+  }
+  .personalMenuR {
+    flex: 1;
+    font-size: 20px;
+    .curLine {
+      height: 40px;
+      line-height: 40px;
+    }
+    .infoRight {
+      margin-right: 35px;
+      color: #999;
+      font-size: 20px;
+    }
+  }
+}
+
+/*.ant-form-item-required:before {
+  content: "" !important;
+}*/
+
+/*-----账户资料-----*/
+.accountImgMenu {
+  width: 166px;
+  p {
+    margin: 0;
+  }
+}
+
+.imgBtn {
+  float: right;
+}
+
+.accountDatumBtn {
+  color: @primaryColor;
+  border: 1px solid @primaryColor !important;
+  width: 120px;
+}
+
+.accountImg {
+  width: 100px;
+  height: 100px;
+  vertical-align: top;
+}
+
+.accountDatumWrapper {
+  border-top: 1px solid #e6e6e6;
+  .userInfoRight {
+    float: right;
+    .passIcon {
+      position: absolute;
+      top: 10px;
+      right: 200px;
+    }
+    .validateOk {
+      margin: 0 20px 0 8px;
+    }
+  }
+  .userInfoLeft {
+    line-height: 40px;
+  }
+}
+
+/*-------企业初级认证------*/
+.firstAuther {
+  width: 300px;
+  margin: 0 auto;
+  background: #ccc;
+}
+
+.modalAuther {
+  width: 480PX;
+  .iconTip {
+    font-size: 50px;
+    margin: 30px auto;
+  }
+  .ant-modal-footer button:first-child {
+    display: none;
+  }
+  .ant-modal-footer button {
+    width: 300px;
+  }
+}
+
+/*-----设置资料里的企业认证弹窗---设置资料首页-*/
+.companyAuther {
+  width: 640px !important;
+  .ant-modal-footer button {
+    display: none;
+  }
+  .authMenu {
+    height: 382px;
+  }
+  .ant-modal-header {
+    text-align: center;
+    padding: 30px 24px;
+    border-bottom: inherit;
+    .ant-modal-title {
+      font-size: 22px;
+    }
+  }
+  .ant-modal-body {
+    padding: 0 40px;
+  }
+}
+
+.companyFirst {
+  background: linear-gradient(to right, #00a760, #00b789);
+}
+
+.companyDipth {
+  background: linear-gradient(to right, #316ccb, #0097a9);
+}
+
+.companyAutherLine {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  .authMenuLeft {
+    font-weight: bold;
+  }
+  .authMenuRight {
+  }
+  .allAutherText {
+    position: relative;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 24px;
+    span {
+      position: absolute;
+      left: -10px;
+      top: -2px;
+    }
+  }
+}
+
+/*-----企业深度认证-----*/
+.searchAuthImg {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #eee;
+  background: #fafafa;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.businessLicence {
+  position: relative;
+  .authDescript {
+    position: absolute;
+    width: 330px;
+    left: 110px;
+    top: 0;
+    p {
+      line-height: 16px;
+    }
+  }
+}
+
+.phoneDescript {
+  line-height: 20px;
+}
+
+.autherPic {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  border-radius: 2px;
+}
+
+.avatarAuther {
+  width: 100px;
+  height: 100px;
+}
+
+.legalSelect {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.depthForm {
+  .ant-form-item-label {
+    label {
+      width: 100%;
+      white-space: normal;
+    }
+  }
+  .legalItem {
+    .ant-form-item-label {
+      line-height: 20px;
+      padding-right: 4px;
+    }
+  }
+}
+
+.depthSubmit {
+  //height:380px;
+  box-shadow: 0 0 10px 0 #dae6e0;
+  .ant-row {
+    height: 40px;
+    div {
+      text-align: left;
+    }
+    :last-child {
+      color: #38414c;
+    }
+  }
+}
+
+.depthModal {
+  .ant-modal-body {
+    padding: 40px 40px 0 40px;
+  }
+}
+
+.seacrhExample {
+  .ant-modal-footer {
+    display: none;
+  }
+}
+
+.depthFormFirst {
+  .ant-input-disabled {
+    color: #38414c;
+  }
+}
+
+/*--------查看认证-----*/
+.depthStatus {
+  width: 300px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  .iconPosition {
+    position: absolute;
+    left: 88px;
+  }
+  .iconPositionN {
+    position: absolute;
+    left: 60px;
+  }
+  .signCompany {
+    width: 120px;
+  }
+}
+
+.verticalTop {
+  vertical-align: top;
+}
+
+.searchAnsower {
+  width: 780px;
+  height: 160px;
+  background: rgba(250, 250, 250, 1);
+  padding: 30px 0 30px 40px;
+  .iconLeft {
+    vertical-align: top;
+    margin-right: 20px;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+  }
+}
+
+/*----收货地址---*/
+.receivindAddress {
+  .topBar {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 30px;
+  }
+  .addressInfo {
+    position: relative;
+    padding-left: 30px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    &:nth-child(even) {
+      background: #fafafa;
+    }
+    .operationIcon {
+      vertical-align: middle;
+    }
+  }
+  .defaultAddress {
+    /*margin-right:10px;
+    vertical-align: top;*/
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    cursor: pointer;
+  }
+}
+
+/*----新增收货地址----*/
+.addAddress {
+  .addTitle {
+    border-left: 4px solid @primaryColor;
+  }
+}
+
+.ant-select-selection-selected-value, .ant-select-dropdown-menu-item {
+  text-overflow: clip;
+}
+
+/*----步骤条-----*/
+.settingStep {
+  .ant-steps-item-wait {
+    .ant-steps-item-icon {
+      background: #999;
+      border-color: #999;
+      .ant-steps-icon {
+        color: #fff;
+      }
+    }
+    .ant-steps-item-content {
+      .ant-steps-item-title {
+        color: #38414c;
+      }
+    }
+  }
+  .ant-steps-item-process {
+    .ant-steps-item-title {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+  .ant-steps-item-title {
+    padding-right: 6px;
+  }
+}
+
+.seting-slider {
+  .textColor {
+    color: #00a65f !important;
+  }
+}
+
+//提示tip
+.settingTips {
+  .ant-tooltip-inner {
+    background: #ffff;
+    box-shadow: 0 0 10px 0 #dae6e0;
+    color: #666;
+  }
+  .ant-tooltip-arrow {
+    border-top-color: #e0e3e6;
+  }
+}
+
+.cashTip {
+  max-width: 250px;
+  //height: 40px;
+  border-radius: 2px;
+  padding: 6px 10px;
+  box-shadow: 0 0 10px 0 #dae6e0;
+  border: 1px solid #eee;
+  position: absolute;
+  bottom: 44px;
+  left: -20px;
+  .arrow {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    bottom: -14px;
+    left: 22px;
+    * {
+      display: block;
+      border-width: 6px;
+      position: absolute;
+      border-style: solid dashed dashed dashed;
+      font-size: 0;
+      line-height: 0;
+    }
+    em {
+      border-color: #eee transparent transparent transparent;
+    }
+    span {
+      border-color: #fff transparent transparent transparent;
+      top: -2px;
+    }
+  }
+}
+
+.searchTip {
+  left: 70px;
+}
+
+.addAddress {
+  .addTitle {
+    border-left: 4px solid @primaryColor;
+  }
+}
+
+.addressMwrapper {
+  width: 640px;
+  height: 610px;
+  margin: -305px 0 0 -320px;
+  background: #fafafa;
+}
+
+.addressMwrapper .addressInfo {
+  margin: 34px 0 26px 0;
+  height: 424px;
+  overflow-y: scroll;
+}
+
+.addressMwrapper .addressInfo .lineAddress {
+  min-height: 90px;
+  background: #fff;
+  display: flex;
+  margin: 10px 30px 16px;
+  align-items: center;
+  position: relative;
+}
+
+.addressMwrapper .addressInfo .lineAddress:hover {
+  box-shadow: 0 0 10px #dae6e0;
+  background: #f2faf7;
+  cursor: pointer;
+}
+
+.addressMwrapper .addressInfo .lineAddress .defaultAddress {
+  position: absolute;
+  width: 80px;
+  height: 24px;
+  right: 24px;
+  top: 12px;
+  border-radius: 12px;
+  color: #66bb6a;
+  background: #ebf7dd;
+}
+
+.addressMwrapper .addressInfo .activeAddress {
+  box-shadow: 0 0 10px #dae6e0;
+  background: #f2faf7;
+}
+
+.addressMwrapper .addressInfo .headerImg {
+  width: 80px;
+}
+
+.addressMwrapper .addressInfo .customerInfo {
+  display: flex;
+  align-items: center;
+}
+
+.addBusiness {
+  background: rgba(0, 0, 0, 0.65);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  .sellerWrapper {
+    width: 1000px;
+    height: 680px;
+    padding: 30px 40px;
+    background: #fff;
+    margin: -305px 0 0 -500px;
+    .business-shopLogo {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      width: 40px;
+      height: 40px;
+      .tipText {
+        position: absolute;
+        display: inline-block;
+        width: 30px;
+        height: 40px;
+        left: 50%;
+        top: 0;
+        margin: 0 0 0 -15px;
+      }
+    }
+  }
+  .commonWrapper {
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    .closeBtn {
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      top: 20px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 24px;
+      color: #999;
+    }
+    .sellerSearch {
+      .ant-input-suffix {
+        button {
+          height: 40px;
+          font-size: 20px;
+        }
+      }
+    }
+    .businessInfo {
+      display: flex;
+      align-items: center;
+      p {
+        margin: 0;
+      }
+      .nameDescribed {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+    .sellerType {
+      .ant-menu {
+        margin-left: -12px;
+      }
+      .ant-menu-horizontal {
+        line-height: 14px;
+      }
+      .ant-menu-item-selected {
+        border: none;
+      }
+      .ant-menu-item {
+        border: 1px solid #fff;
+        padding: 0 14px;
+        &:nth-child(4) {
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+        }
+      }
+    }
+  }
+  .addSellerTable {
+    .ant-table-thead {
+      th {
+        height: 40px;
+      }
+    }
+    /*----修改----*/
+    tr {
+      td {
+        height: 56px;
+      }
+    }
+    td:nth-child(3) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .ant-table-scroll {
+      position: relative;
+    }
+  }
+  .selectSeller {
+    border: 1px solid #00a65f;
+    color: #00a65f;
+  }
+}
+
+//工品行图片上传按钮样式
+.gph-upload-btn {
+  width: 140px;
+  height: 98px;
+  background: #FAFAFA;
+  border: solid 1px #E6E6E6;
+  .text-center;
+  .anticon {
+    font-size: 40px;
+    color: #999;
+    margin-top: 20px;
+  }
+}
+
+.icon-auth-pass {
+  font-size: 120px;
+  position: absolute;
+  top: 64px;
+  right: 20px;
+  color: #316CCB;
+}
+
+.myAuthForm {
+  .avatar-uploader-invite .ant-upload-select {
+    width: 100px;
+    height: 100px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    background: #f8f8f8;
+    vertical-align: bottom;
+  }
+
+  .ant-upload-select {
+    line-height: 130px;
+    .anticon {
+      font-size: 60px;
+    }
+  }
+  .auth-descript {
+    vertical-align: bottom;
+    margin-left: 20px;
+    display: inline-block;
+    line-height: 1;
+  }
+}

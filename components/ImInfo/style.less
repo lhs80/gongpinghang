@@ -1,0 +1,302 @@
+@import "../../static/base.less";
+//聊天框
+.accountWrapper {
+  touch-action: none;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  z-index: 1000;
+  .accountCur {
+    width: 400px;
+    height: 460px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    .accountTop {
+      height: 50px;
+      line-height: 50px;
+      padding: 0 30px;
+      background: #1f9a5d;
+      border-radius: 8px 8px 0 0;
+      .closeAccount {
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        top: 14px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        color: #fff;
+      }
+      .headImg {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .accountMid {
+      height: 308px;
+      padding: 10px 20px;
+      overflow: auto;
+      .msgOther {
+        width: 100%;
+        .otherImg {
+          width: 32px;
+          height: 32px;
+          vertical-align: top;
+        }
+      }
+      .toInfo {
+        .msg {
+          margin-left: 10px;
+          position: relative;
+          .arrow {
+            left: -13px;
+            * {
+              border-style: solid dashed dashed dashed;
+
+            }
+            em {
+              border-color: transparent #fff transparent transparent;
+            }
+            span {
+              border-color: transparent #f3f3f3 transparent transparent;
+              top: 2px;
+            }
+          }
+        }
+      }
+      .msgMe {
+        margin: 10px 0;
+        .msg {
+          position: relative;
+          float: right;
+          background: #e5f6ef;
+          margin-right: 10px;
+          .arrow {
+            right: -13px;
+            * {
+              border-style: solid dashed dashed dashed;
+
+            }
+            em {
+              border-color: transparent transparent transparent #fff;
+            }
+            span {
+              border-color: transparent transparent transparent #e5f6ef;
+              top: 2px;
+            }
+          }
+        }
+        .meImg {
+          float: right;
+        }
+        &:after {
+          content: '';
+          display: block;
+          clear: both;
+        }
+      }
+      .msg {
+        max-width: 200px;
+        background: #f3f3f3;
+        padding: 10px 14px;
+        border: 1px solid #eee;
+        position: absolute;
+        .arrow {
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          top: 8px;
+          * {
+            display: block;
+            border-width: 6px;
+            position: absolute;
+            font-size: 0;
+            line-height: 0;
+          }
+        }
+        .emoji {
+          width: 24px !important;
+        }
+        .msgBox {
+          line-height: 20px;
+          white-space: normal;
+          word-wrap: break-word;
+          word-break: break-all;
+          font-size: 14px;
+          img {
+            width: 100%;
+          }
+          .fileName {
+            vertical-align: top;
+            margin-top: 10px;
+          }
+        }
+      }
+      .sendTime {
+        margin: 0;
+        height: 30px;
+        line-height: 30px;
+      }
+      .moreData {
+        cursor: pointer;
+      }
+    }
+    .accountFooter {
+      height: 100px;
+      border-top: 1px solid #e6e6e6;
+      position: relative;
+      .iconItem {
+        font-size: 24px;
+        margin-right: 20px;
+        color: #999;
+      }
+      .sendContent {
+        resize: none;
+        border: none;
+        &:focus {
+          box-shadow: 0 0 0 -2px #fff;
+        }
+      }
+      .sendInfoBtn {
+        position: absolute;
+        bottom: 10px;
+        right: 30px;
+        border: 1px solid @primaryColor;
+      }
+
+      .fileImg {
+        position: relative;
+      }
+      #fileToSent {
+        position: absolute;
+      }
+    }
+  }
+}
+
+/*----表情包-----*/
+.m-chat-emoji {
+  position: absolute;
+  bottom: 30px;
+  height: 200px;
+  left: -20px;
+  width: 380px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  .emoji-channel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 0 10px;
+    .emoji-album {
+      display: inline-block;
+      padding: 10px;
+      width: 180px;
+      height: 180px;
+      border-right: 1px solid #f0f0f0;
+      img {
+        margin: 0;
+        display: block;
+        width: inherit;
+        height: inherit;
+      }
+      &.active {
+        background-color: #f0f0f0;
+      }
+    }
+  }
+  .emoji-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+    overflow-y: auto;
+    .cnt {
+      position: relative;
+      display: block;
+      padding: 0 0 10px 16px;
+      text-align: left;
+      span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin: 10px 10px 0 0;
+        cursor: pointer;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .emoji-item {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      padding: 2px;
+      vertical-align: middle;
+      img {
+        width: inherit;
+        height: inherit;
+      }
+    }
+    .pinup-item {
+      width: 44px;
+      height: 44px;
+    }
+  }
+}
+.messageDel{
+  position:relative;
+  width:300px;
+  .sessionDel{
+    position:absolute;
+    left:340px;
+    width:50px;
+    top:16px;
+  }
+}
+.material-detail {
+  .bg-white;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -o-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  padding: 16px;
+  margin-top: 16px;
+  .material-detail-img {
+    width: 360px;
+    height: 360px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .material-detail-info {
+    -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-flex: 1; /* OLD - Firefox 19- */
+    -webkit-flex: 1; /* Chrome */
+    -ms-flex: 1; /* IE 10 */
+    flex: 1; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    margin-left: 20px;
+
+    .material-detail-info-sub {
+      background: #f2faf7;
+      padding: 18px 0 18px 28px;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+    }
+
+  }
+}

@@ -1,0 +1,92 @@
+@import "../../../../static/base.less";
+
+//询价单列表
+.index-material-inquiry-panel {
+  overflow: hidden;
+  margin: 0 auto;
+  .maxWidth;
+  .left {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: white;
+    float: left;
+    height: 350px;
+    padding: 24px 16px;
+    width: 984px;
+    .item {
+      border: 1px solid rgba(226, 226, 226, 1);
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      height: 120px;
+      margin-top: 24px;
+      margin-right: 14px;
+      padding: 16px;
+      position: relative;
+      width: 308px;
+      &:nth-child(n+4) {
+        margin-top: 18px !important;
+      }
+      &:nth-child(3n) {
+        margin-right: 0 !important;
+      }
+      &:hover {
+        -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .12);
+        -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .12);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .12);
+      }
+      .title {
+        .text-grey;
+        .text-ellipsis;
+      }
+      .identity {
+        margin-top: 13px !important;
+        .text-lightgrey;
+      }
+      .area {
+        margin-top: 6px !important;
+        .text-lightgrey;
+      }
+      .info {
+        .h6;
+        margin-top: 13px;
+      }
+      .flag {
+        background: url("/static/sprites/inquiry-flag.png");
+        color: white;
+        display: block;
+        height: 26px;
+        .h6;
+        line-height: 24px;
+        position: absolute;
+        right: 12px;
+        top: -4px;
+        .text-center;
+        width: 58px;
+      }
+      .ant-statistic {
+        display: inline-block;
+      }
+      .ant-statistic-title, .ant-statistic-content {
+        display: inline-block;
+        font-size: 12px;
+        .text-primary;
+      }
+      .ant-statistic-title {
+        margin: 0 5px;
+      }
+      .ant-statistic-content {
+        letter-spacing: 2px;
+      }
+    }
+  }
+  .right {
+    .bg-white;
+    float: left;
+    height: 350px;
+    margin-left: 16px;
+    padding: 24px 16px;
+    width: 220px;
+  }
+}

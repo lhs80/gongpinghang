@@ -1,0 +1,133 @@
+@import '../../../static/base.less';
+
+.cart-warpper {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+  padding-bottom: 100px;
+
+  .main-title {
+    height: 40px;
+    .bg-white;
+    width: 100%;
+    .text-center;
+    .text-muted;
+    .mt1;
+    .h5;
+  }
+
+  .sub-title {
+    background: #FFF4F1;
+    height: 40px;
+    line-height: 40px;
+    .text-muted;
+    .prl4;
+    margin: 40px 0 30px 0;
+  }
+
+  .cart-item {
+    .h5;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .12);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .12);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .12);
+    vertical-align: top;
+
+    &:not(:first-child) {
+      margin-top: 14px;
+    }
+
+    .ant-input-group-wrapper {
+      width: 108px;
+
+      .ant-input-group-addon {
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .btn-handle {
+        border: none !important;
+        display: inline-block;
+        width: 30px;
+        line-height: 16px;
+        height: 30px;
+        padding: 0;
+        .text-primary;
+        .h2
+      }
+
+      .ant-input {
+        .text-center;
+        width: 60px;
+      }
+    }
+
+    .product-item-name {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -o-box;
+      display: box;
+
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      -ms-flex-direction: row;
+      -o-box-orient: horizontal;
+      box-orient: horizontal;
+
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      -o-box-align: center;
+      box-align: center;
+
+      width: 300px;
+      -ms-word-break: break-all;
+      word-break: break-all;
+    }
+  }
+
+  .footer {
+    -webkit-box-shadow: 10px 0 10px rgba(0, 0, 0, .04);
+    -moz-box-shadow: 10px 0 10px rgba(0, 0, 0, .04);
+    box-shadow: 10px 0 10px rgba(0, 0, 0, .04);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    .bg-white;
+    .mt1;
+    overflow: hidden;
+    li {
+      height: 72px;
+      float: left;
+    }
+    .first {
+      width: 548px;
+      padding-left: 32px;
+      line-height: 72px;
+    }
+    .second {
+      width: 512px;
+      .text-right;
+      div {
+        .text-right;
+        padding-right: 14px;
+      }
+    }
+    .third {
+      width: 160px;
+      cursor: pointer;
+      color: white;
+      font-size: 18px;
+      .text-center;
+      line-height: 72px;
+      font-weight: bold;
+      .active {
+        background: #B4A078;
+      }
+      .disabled {
+        background: #ccc8c8
+      }
+    }
+  }
+}
+

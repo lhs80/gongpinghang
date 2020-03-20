@@ -1,0 +1,45 @@
+//建材仓首页轮播图
+.material-carousel {
+  vertical-align: top;
+  width: 100%;
+  max-width: 738px;
+  height: 400px !important;;
+  margin: 0 auto;
+  z-index: 5;
+  .slick-track {
+    z-index: 5;
+    height: 400px !important;;
+  }
+  &:hover {
+    .slick-arrow.slick-prev, .slick-arrow.slick-next {
+      width: 30px;
+      height: 48px;
+      background: rgba(0, 0, 0, .3);
+      z-index: 9;
+      top: 50%;
+      margin-top: -24px;
+    }
+    .slick-arrow.slick-prev {
+      left: 0;
+      &:after {
+        display: block;
+        content: '\e602';
+        color: white;
+        font-family: "iconfont";
+        font-size: 30px;
+        margin-top: 3px;
+      }
+    }
+    .slick-arrow.slick-next {
+      right: 0;
+      &:after {
+        display: block;
+        content: '\e600';
+        color: white;
+        font-family: "iconfont";
+        font-size: 30px;
+        margin-top: 3px;
+      }
+    }
+  }
+}

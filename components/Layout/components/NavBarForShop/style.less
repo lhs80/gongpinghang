@@ -1,0 +1,190 @@
+@import "../../../../static/base.less";
+
+.shop-header {
+  min-width: 1220px;
+  height: 150px !important;
+  line-height: normal !important;
+  background: white !important;
+  padding: 0 !important;
+
+  .page-head-wrapper {
+    border: solid 1px transparent;
+    &:after {
+      content: '';
+      clear: both;
+    }
+    .page-head-search {
+      height: 62px;
+      margin: 23px auto;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -o-box;
+      display: box;
+
+      -webkit-box-orient: horizontal;
+      -moz-box-orient: horizontal;
+      -ms-flex-direction: row;
+      -o-box-orient: horizontal;
+      box-orient: horizontal;
+
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      -o-box-align: center;
+      box-align: center;
+
+      .page-head-search-left {
+        margin-right: 22px;
+        width: 278px;
+        .icon-logo {
+          display: block;
+        }
+      }
+      .page-head-search-main {
+        float: left;
+        position: relative;
+        margin-right: 70px;
+        .search-wrapper {
+          .bg-white;
+          border: solid 2px #ffb432;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          border-radius: 2px;
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 20px;
+          .ant-input {
+            border: none;
+            height: 36px !important;
+            &:focus {
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              box-shadow: none;
+            }
+          }
+          .ant-input-search-button {
+            .bg-primary-linear;
+            border: none;
+            padding: 0 8px !important;
+            height: 36px;
+            .h4;
+            background: linear-gradient(to right, #FFB432, #F56A2B) !important
+          }
+        }
+      }
+      .page-head-search-right {
+        float: left;
+        position: relative;
+        .index-cart-list-panel-wrapper {
+          width: 370px;
+          height: auto;
+          max-height: 380px;
+          position: absolute !important;
+          top: 40px;
+          right: 0;
+          z-index: 999;
+          -webkit-box-shadow: 0 0 5px rgba(140, 137, 137, 0.3);
+          -moz-box-shadow: 0 0 5px rgba(140, 137, 137, 0.3);
+          box-shadow: 0 0 5px rgba(140, 137, 137, 0.3);
+          .bg-white;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          .index-cart-list-panel {
+            .prl2;
+            max-height: 340px;
+            overflow-y: auto;
+            .ant-list-item-action {
+              margin-left: 25px !important;
+            }
+            .ant-list-item-meta-description {
+              line-height: 1 !important;
+              margin-top: 10px;
+            }
+            .ant-list-item-meta-avatar {
+              margin-right: 10px !important;
+            }
+          }
+          .index-cart-list-total {
+            .text-center;
+            width: 100%;
+            line-height: 40px;
+            background: #E6E1E1;
+          }
+        }
+      }
+
+      &:after {
+        content: '';
+        clear: both;
+      }
+    }
+
+    .page-head-searchFixed {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      background: #fdfffc;
+      box-shadow: 0 0 5px 5px #e5e5e5;
+    }
+
+    .btn-recommend {
+      background-image: linear-gradient(to right, #3BA7EB, #3B88EB, #3BA7EB);
+      margin-left: 7px;
+      border: none;
+      color: #fff;
+      height: 50px !important;
+      line-height: 50px;
+      width: 120px;
+    }
+  }
+
+  //导航菜单
+  .page-head-menu {
+    background: transparent !important;
+    border: none;
+    font-size: 16px;
+    float: left;
+    height: 40px !important;
+    line-height: 35px;
+
+    .ant-menu-item {
+      border: none;
+      padding: 0;
+      width: 158px;
+      height: 27px;
+      line-height: 24px;
+      text-align: center;
+      border-right: white dashed 1px;
+
+      &:nth-child(2) {
+        border-left: white dashed 1px;
+      }
+
+      & > a {
+        color: #fff !important;
+      }
+    }
+
+    .ant-menu-item-selected {
+      font-weight: normal !important;
+      border-bottom: none !important;
+
+      & > a {
+        color: #fff !important;
+      }
+    }
+
+    .ant-menu-item-active {
+      font-weight: normal;
+      border-bottom: none !important;
+
+      & > a {
+        color: #fff !important;
+      }
+    }
+  }
+}

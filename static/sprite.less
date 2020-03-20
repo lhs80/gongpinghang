@@ -1,0 +1,263 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@inquiry-flag-name: 'inquiry-flag';
+@inquiry-flag-x: 0px;
+@inquiry-flag-y: 0px;
+@inquiry-flag-offset-x: 0px;
+@inquiry-flag-offset-y: 0px;
+@inquiry-flag-width: 58px;
+@inquiry-flag-height: 26px;
+@inquiry-flag-total-width: 1801px;
+@inquiry-flag-total-height: 200px;
+@inquiry-flag-image: '/static/images/sprite.png';
+@inquiry-flag: 0px 0px 0px 0px 58px 26px 1801px 200px '/static/images/sprite.png' 'inquiry-flag';
+@ewm-name: 'ewm';
+@ewm-x: 58px;
+@ewm-y: 0px;
+@ewm-offset-x: -58px;
+@ewm-offset-y: 0px;
+@ewm-width: 70px;
+@ewm-height: 70px;
+@ewm-total-width: 1801px;
+@ewm-total-height: 200px;
+@ewm-image: '/static/images/sprite.png';
+@ewm: 58px 0px -58px 0px 70px 70px 1801px 200px '/static/images/sprite.png' 'ewm';
+@download-small-name: 'download-small';
+@download-small-x: 128px;
+@download-small-y: 0px;
+@download-small-offset-x: -128px;
+@download-small-offset-y: 0px;
+@download-small-width: 82px;
+@download-small-height: 83px;
+@download-small-total-width: 1801px;
+@download-small-total-height: 200px;
+@download-small-image: '/static/images/sprite.png';
+@download-small: 128px 0px -128px 0px 82px 83px 1801px 200px '/static/images/sprite.png' 'download-small';
+@download-name: 'download';
+@download-x: 210px;
+@download-y: 0px;
+@download-offset-x: -210px;
+@download-offset-y: 0px;
+@download-width: 88px;
+@download-height: 88px;
+@download-total-width: 1801px;
+@download-total-height: 200px;
+@download-image: '/static/images/sprite.png';
+@download: 210px 0px -210px 0px 88px 88px 1801px 200px '/static/images/sprite.png' 'download';
+@customer-five-name: 'customer-five';
+@customer-five-x: 298px;
+@customer-five-y: 0px;
+@customer-five-offset-x: -298px;
+@customer-five-offset-y: 0px;
+@customer-five-width: 90px;
+@customer-five-height: 90px;
+@customer-five-total-width: 1801px;
+@customer-five-total-height: 200px;
+@customer-five-image: '/static/images/sprite.png';
+@customer-five: 298px 0px -298px 0px 90px 90px 1801px 200px '/static/images/sprite.png' 'customer-five';
+@customer-four-name: 'customer-four';
+@customer-four-x: 388px;
+@customer-four-y: 0px;
+@customer-four-offset-x: -388px;
+@customer-four-offset-y: 0px;
+@customer-four-width: 90px;
+@customer-four-height: 90px;
+@customer-four-total-width: 1801px;
+@customer-four-total-height: 200px;
+@customer-four-image: '/static/images/sprite.png';
+@customer-four: 388px 0px -388px 0px 90px 90px 1801px 200px '/static/images/sprite.png' 'customer-four';
+@customer-one-name: 'customer-one';
+@customer-one-x: 478px;
+@customer-one-y: 0px;
+@customer-one-offset-x: -478px;
+@customer-one-offset-y: 0px;
+@customer-one-width: 90px;
+@customer-one-height: 90px;
+@customer-one-total-width: 1801px;
+@customer-one-total-height: 200px;
+@customer-one-image: '/static/images/sprite.png';
+@customer-one: 478px 0px -478px 0px 90px 90px 1801px 200px '/static/images/sprite.png' 'customer-one';
+@customer-three-name: 'customer-three';
+@customer-three-x: 568px;
+@customer-three-y: 0px;
+@customer-three-offset-x: -568px;
+@customer-three-offset-y: 0px;
+@customer-three-width: 90px;
+@customer-three-height: 90px;
+@customer-three-total-width: 1801px;
+@customer-three-total-height: 200px;
+@customer-three-image: '/static/images/sprite.png';
+@customer-three: 568px 0px -568px 0px 90px 90px 1801px 200px '/static/images/sprite.png' 'customer-three';
+@customer-two-name: 'customer-two';
+@customer-two-x: 658px;
+@customer-two-y: 0px;
+@customer-two-offset-x: -658px;
+@customer-two-offset-y: 0px;
+@customer-two-width: 90px;
+@customer-two-height: 90px;
+@customer-two-total-width: 1801px;
+@customer-two-total-height: 200px;
+@customer-two-image: '/static/images/sprite.png';
+@customer-two: 658px 0px -658px 0px 90px 90px 1801px 200px '/static/images/sprite.png' 'customer-two';
+@default-header-name: 'default-header';
+@default-header-x: 748px;
+@default-header-y: 0px;
+@default-header-offset-x: -748px;
+@default-header-offset-y: 0px;
+@default-header-width: 100px;
+@default-header-height: 100px;
+@default-header-total-width: 1801px;
+@default-header-total-height: 200px;
+@default-header-image: '/static/images/sprite.png';
+@default-header: 748px 0px -748px 0px 100px 100px 1801px 200px '/static/images/sprite.png' 'default-header';
+@adv-name: 'adv';
+@adv-x: 848px;
+@adv-y: 0px;
+@adv-offset-x: -848px;
+@adv-offset-y: 0px;
+@adv-width: 115px;
+@adv-height: 65px;
+@adv-total-width: 1801px;
+@adv-total-height: 200px;
+@adv-image: '/static/images/sprite.png';
+@adv: 848px 0px -848px 0px 115px 65px 1801px 200px '/static/images/sprite.png' 'adv';
+@img-buyer-name: 'img-buyer';
+@img-buyer-x: 963px;
+@img-buyer-y: 0px;
+@img-buyer-offset-x: -963px;
+@img-buyer-offset-y: 0px;
+@img-buyer-width: 130px;
+@img-buyer-height: 116px;
+@img-buyer-total-width: 1801px;
+@img-buyer-total-height: 200px;
+@img-buyer-image: '/static/images/sprite.png';
+@img-buyer: 963px 0px -963px 0px 130px 116px 1801px 200px '/static/images/sprite.png' 'img-buyer';
+@img-saler-name: 'img-saler';
+@img-saler-x: 1093px;
+@img-saler-y: 0px;
+@img-saler-offset-x: -1093px;
+@img-saler-offset-y: 0px;
+@img-saler-width: 130px;
+@img-saler-height: 116px;
+@img-saler-total-width: 1801px;
+@img-saler-total-height: 200px;
+@img-saler-image: '/static/images/sprite.png';
+@img-saler: 1093px 0px -1093px 0px 130px 116px 1801px 200px '/static/images/sprite.png' 'img-saler';
+@download-top-name: 'download-top';
+@download-top-x: 1223px;
+@download-top-y: 0px;
+@download-top-offset-x: -1223px;
+@download-top-offset-y: 0px;
+@download-top-width: 136px;
+@download-top-height: 136px;
+@download-top-total-width: 1801px;
+@download-top-total-height: 200px;
+@download-top-image: '/static/images/sprite.png';
+@download-top: 1223px 0px -1223px 0px 136px 136px 1801px 200px '/static/images/sprite.png' 'download-top';
+@logo-name: 'logo';
+@logo-x: 1359px;
+@logo-y: 0px;
+@logo-offset-x: -1359px;
+@logo-offset-y: 0px;
+@logo-width: 210px;
+@logo-height: 62px;
+@logo-total-width: 1801px;
+@logo-total-height: 200px;
+@logo-image: '/static/images/sprite.png';
+@logo: 1359px 0px -1359px 0px 210px 62px 1801px 200px '/static/images/sprite.png' 'logo';
+@nodata-name: 'nodata';
+@nodata-x: 1569px;
+@nodata-y: 0px;
+@nodata-offset-x: -1569px;
+@nodata-offset-y: 0px;
+@nodata-width: 232px;
+@nodata-height: 200px;
+@nodata-total-width: 1801px;
+@nodata-total-height: 200px;
+@nodata-image: '/static/images/sprite.png';
+@nodata: 1569px 0px -1569px 0px 232px 200px 1801px 200px '/static/images/sprite.png' 'nodata';
+@spritesheet-width: 1801px;
+@spritesheet-height: 200px;
+@spritesheet-image: '/static/images/sprite.png';
+@spritesheet-sprites: @inquiry-flag @ewm @download-small @download @customer-five @customer-four @customer-one @customer-three @customer-two @default-header @adv @img-buyer @img-saler @download-top @logo @nodata;
+@spritesheet: 1801px 200px '/static/images/sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  background-image: e(%('url(%a)', e(@sprite-image)));
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

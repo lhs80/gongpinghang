@@ -1,0 +1,22 @@
+.bank-card-wrapper {
+  float: left;
+  margin-right: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0 !important;
+  }
+  &:nth-child(n+4) {
+    margin-top: 27px;
+  }
+  .cover {
+    width: 240px;
+    height: 140px;
+    padding: 30px 36px 20px 20px;
+    &.company {
+      background: url(/static/images/bg-bank-card-company.png) no-repeat;
+    }
+    &.person {
+      background: url(/static/images/bg-bank-card-person.png) no-repeat;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@import "../../static/base.less";
+//建材仓首屏分类列表
+.material-typelist-wrapper {
+  float: left;
+  width: 230px;
+  height: 400px;
+  background: white;
+  margin-top: -1px;
+  position: absolute;
+  z-index: 99;
+  //分类面板
+  .material-bd-list {
+    height: 40px;
+    display: box;
+    overflow: hidden;
+    padding: 13px 10px;
+    position: relative;
+    -webkit-box-orient: horizontal;
+    z-index: 105;
+    .iconfont {
+      vertical-align: top !important;
+      line-height: 0.8 !important;
+    }
+    &:hover {
+      .firstName {
+        .text-primary;
+      }
+      .bg-white;
+      -webkit-box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
+      box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
+      width: 231px;
+    }
+
+    .firstName {
+      //font-weight: bold;
+      line-height: 1;
+      color: #303133
+    }
+    .subName {
+      display: inline-block;
+      flex: 1;
+      -webkit-box-flex: 1;
+      color: rgba(0, 0, 0, 0.5);
+      margin-right: 5px;
+    }
+  }
+  .toggle-panel {
+    border: solid 1px red;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    .bg-white;
+    height: 400px;
+    left: 229px;
+    overflow: auto;
+    position: absolute;
+    padding: 20px 80px 20px 20px;
+    top: 1px;
+    width: 990px;
+    z-index: 99;
+    ul {
+      padding: 0;
+      margin: 0;
+      display: table;
+      li {
+        list-style-type: none;
+        position: relative;
+        span {
+          display: table-cell;
+          &.title {
+            min-width: 150px;
+            position: relative;
+            &:after {
+              content: '\e616';
+              font-family: 'iconfont';
+              position: absolute;
+              top: 0;
+              right: 30px;
+            }
+          }
+          .sub-item {
+            display: inline-block;
+            .h5;
+            line-height: 1.5;
+            margin-right: 20px;
+            margin-bottom: 10px;
+            color: #606266;
+          }
+        }
+      }
+    }
+  }
+}

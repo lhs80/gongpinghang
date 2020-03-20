@@ -1,0 +1,441 @@
+/*---通用样式定义---*/
+/*---label宽度---*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1 !important;
+}
+#__next {
+  height: 100%;
+}
+i,
+em {
+  font-style: normal;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+a:link,
+a:hover,
+a:active,
+a:visited {
+  border: none;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffb432 !important;
+}
+.bg-grey {
+  background: #f0f3ef;
+}
+.bg-primary {
+  background: #ffb432 !important;
+}
+.bg-lightgrey {
+  background: #fafafa;
+}
+.bg-white {
+  background: #fff !important;
+}
+.bg-primary-linear {
+  background: -webkit-linear-gradient(right, #F56A2B, #FFB432) !important;
+}
+.bg-primary-linear:hover,
+.bg-primary-linear:active,
+.bg-primary-linear::selection,
+.bg-primary-linear:visited {
+  background: -webkit-linear-gradient(right, #F56A2B, #FFB432);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.bg-primary-linear:disabled {
+  background: #e2e2e2 !important;
+}
+.bg-blue-linear {
+  border: none !important;
+  background: -webkit-linear-gradient(right, #3BA7EB, #508CF8);
+}
+.bg-blue-linear:hover {
+  border: none !important;
+  background: -webkit-linear-gradient(right, #3BA7EB, #508CF8);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0 !important;
+  margin: 0 !important;
+  line-height: 1;
+  font-weight: normal;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h4,
+.h4 {
+  font-size: 16px;
+}
+h3,
+.h3 {
+  font-size: 18px;
+}
+h2,
+.h2 {
+  font-size: 20px;
+}
+h1,
+.h1 {
+  font-size: 22px;
+}
+.h0 {
+  font-size: 24px;
+}
+.large {
+  font-size: 28px;
+}
+.block {
+  display: block !important;
+}
+.show {
+  display: inline-block !important;
+}
+.hide {
+  display: none !important;
+}
+.text-primary {
+  color: #ffb432 !important;
+}
+.text-primary-linear {
+  background-image: -webkit-linear-gradient(right, #F56A2B, #FFB432);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-secondary {
+  color: #666;
+}
+.text-grey {
+  color: #353a46;
+}
+.text-darkgrey {
+  color: #303133;
+}
+.text-lightgrey {
+  color: #909399;
+}
+.text-muted {
+  color: #909090;
+}
+.text-white {
+  color: #fff !important;
+}
+.text-black {
+  color: black;
+}
+.text-info {
+  color: #457acf;
+}
+.text-plus {
+  color: #508CF8;
+}
+.text-warning {
+  color: #ffb300;
+}
+.text-warn {
+  color: #F08455;
+}
+.text-danger {
+  color: #F75D39;
+}
+.text-hover:hover {
+  color: #ffb432 !important;
+}
+.text-ellipsis {
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.mt1 {
+  margin-top: 10px !important;
+}
+.mt2 {
+  margin-top: 20px !important;
+}
+.mt3 {
+  margin-top: 30px !important;
+}
+.mt4 {
+  margin-top: 40px !important;
+}
+.mt5 {
+  margin-top: 50px !important;
+}
+.mt10 {
+  margin-top: 100px !important;
+}
+.mt8 {
+  margin-top: 80px !important;
+}
+.mt6 {
+  margin-top: 60px !important;
+}
+.p5 {
+  padding: 50px !important;
+}
+.prl5 {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+.ptb5 {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+.p6 {
+  padding: 60px !important;
+}
+.prl6 {
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+.ptb6 {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+.p4 {
+  padding: 40px !important;
+}
+.prl4 {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+.ptb4 {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+.p3 {
+  padding: 30px !important;
+}
+.prl3 {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+.ptb3 {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+.p2 {
+  padding: 20px !important;
+}
+.prl2 {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+.ptb2 {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+.p1 {
+  padding: 10px !important;
+}
+.prl1 {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.ptb1 {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+.border-radius {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.border-circle {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+.break {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.maxWidth {
+  width: 1220px;
+  margin: 0 auto;
+}
+.border-color {
+  border-radius: 50%;
+  border: 1px solid #e5e5e5;
+}
+.iconfont {
+  line-height: 0.7 !important;
+  vertical-align: middle;
+}
+button .anticon {
+  line-height: 0.7 !important;
+  vertical-align: middle;
+}
+.screen-outer {
+  margin: 16px auto;
+  width: 1220px;
+  overflow: hidden;
+}
+.screen-outer .left,
+.screen-outer .main,
+.screen-outer .right {
+  float: left;
+}
+.screen-outer .left {
+  width: 210px;
+}
+.screen-outer .main {
+  width: 758px;
+  overflow: hidden;
+  margin: 0 16px 0 16px;
+}
+.screen-outer .main .top {
+  height: 324px;
+  margin-bottom: 16px;
+}
+.screen-outer .right {
+  width: 220px;
+}
+.screen-outer .right .top {
+  background: #fff !important;
+  border-bottom: solid 1px #f1f1f1;
+  height: 214px;
+  vertical-align: middle;
+  padding: 24px 0 0 0;
+  text-align: center;
+}
+.screen-outer .right .top .login-welcome-info {
+  color: #3b3b3b;
+  font-weight: bold;
+  margin-top: 14px !important;
+}
+.screen-outer .right .top .login-menu {
+  margin-top: 20px;
+  color: #ffb432 !important;
+}
+.screen-outer .right .top .login-menu .anticon {
+  border: solid 1px #FFB432;
+  background-image: -webkit-linear-gradient(to right, #FFB432, #F56A2B);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 28px;
+  padding: 10px;
+}
+.screen-outer .right .top .login-menu .anticon + h6 {
+  color: #3b3b3b;
+}
+.screen-outer .right .top .login-btn {
+  color: #ffb432 !important;
+  margin-top: 30px !important;
+}
+.screen-outer .right .top .login-btn .login,
+.screen-outer .right .top .login-btn .regist {
+  width: 80px;
+  vertical-align: middle;
+}
+.screen-outer .right .top .login-btn .login {
+  background: linear-gradient(to right, #FFB432, #F56A2B) !important;
+  border: none;
+  color: white;
+}
+.screen-outer .right .top .login-btn .regist {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  border: 2px solid #ddd;
+  border-image: -webkit-linear-gradient(to right, #FFB432, #F56A2B) 1 1;
+  border-image: -moz-linear-gradient(to right, #FFB432, #F56A2B) 1 1;
+  border-image: -o-linear-gradient(to right, #FFB432, #F56A2B) 1 1;
+  border-image: linear-gradient(to right, #FFB432, #F56A2B) 1 1;
+  color: #ffb432 !important;
+  margin-left: 14px;
+}
+.screen-outer .right .middle {
+  background: #fff !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -o-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-flex-direction: row;
+  -o-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -o-box-pack: center;
+  box-pack: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -o-box-align: center;
+  box-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+.screen-outer .right .bottom {
+  background: #fff !important;
+  padding: 20px 18px;
+}
+.screen-outer .right .bottom .inquiry-panel {
+  height: 140px;
+  padding: 11px 15px;
+}
+.martial-type-card {
+  height: 357px;
+  color: #38414c;
+  padding: 30px 15px 30px 40px;
+  overflow: hidden;
+}
+.martial-type-card .ant-card-body {
+  padding: 0;
+}
+.martial-type-card .left {
+  float: left;
+  width: 160px;
+  margin-right: 40px;
+}
+.martial-type-card .right {
+  float: left;
+  width: 338px;
+}
+.page-404 {
+  position: relative;
+  width: 1220px;
+  height: 700px;
+  margin: 0 auto;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}

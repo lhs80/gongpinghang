@@ -1,0 +1,133 @@
+.businessInfo {
+  display: flex;
+  align-items: center;
+  p {
+    margin: 0;
+  }
+  .nameDescribed {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+.addBusiness {
+  background: rgba(0, 0, 0, 0.65);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  .sellerWrapper {
+    width: 1000px;
+    height: 680px;
+    padding: 30px 40px;
+    background: #fff;
+    margin: -305px 0 0 -500px;
+    .business-shopLogo {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      width: 40px;
+      height: 40px;
+      .tipText {
+        position: absolute;
+        display: inline-block;
+        width: 30px;
+        height: 40px;
+        left: 50%;
+        top: 0;
+        margin: 0 0 0 -15px;
+      }
+    }
+  }
+  .commonWrapper {
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    .closeBtn {
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      top: 20px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 24px;
+      color: #999;
+    }
+    .sellerSearch {
+      .ant-input-suffix {
+        button {
+          height: 40px;
+          font-size: 20px;
+        }
+      }
+    }
+    .businessInfo {
+      display: flex;
+      align-items: center;
+      p {
+        margin: 0;
+      }
+      .nameDescribed {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+    .sellerType {
+      .ant-menu {
+        margin-left: -12px;
+      }
+      .ant-menu-horizontal {
+        line-height: 14px;
+      }
+      .ant-menu-item-selected {
+        border: none;
+      }
+      .ant-menu-item {
+        border: 1px solid #fff;
+        padding: 0 14px;
+        &:nth-child(4) {
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+        }
+      }
+    }
+  }
+  .addSellerTable {
+    .ant-table-thead {
+      th {
+        height: 40px;
+      }
+    }
+    /*----修改----*/
+    tr {
+      td {
+        height: 56px;
+      }
+    }
+    td:nth-child(3) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .ant-table-scroll {
+      position: relative;
+    }
+  }
+  .selectSeller {
+    border: 1px solid #00a65f;
+    color: #00a65f;
+  }
+}

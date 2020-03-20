@@ -1,0 +1,567 @@
+@import "../../static/base.less";
+
+.inquiryMenu {
+  //background: url('/static/images/bg-material-add-inquiry.png') no-repeat top left;
+  padding-top: 90px;
+  .inquiryWrapper {
+    margin-top: -160px !important;
+    z-index: 9;
+    position: relative;
+    padding: 80px 60px 68px 60px;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    //top: 206px;
+    left: 50%;
+    margin-left: -960px;
+    width: 1920px;
+    height: 260px;
+    background: url('/static/images/bg-material-add-inquiry.png') no-repeat top left;
+  }
+}
+
+.inquiryMenu .inquiryMenuTip {
+  height: 260px;
+}
+
+.inquirySheet {
+  width: 1220px;
+  margin: 0 auto;
+  padding: 20px 0 80px 0;
+}
+
+.inquirySheet .inquiryWrapper {
+  padding: 80px 60px 68px 60px;
+}
+
+.inquirySheet .inquiryWrapper .sheetTitle {
+  display: flex;
+  align-items: center;
+}
+
+.inquirySheet .inquiryWrapper .sheetTitle .sign {
+  width: 4px;
+  height: 30px;
+  background: #00a65f;
+  margin-right: 20px;
+  vertical-align: center;
+}
+
+.inquirySheet .inquiryWrapper .ant-form-item-required:before {
+  color: #ffb432;
+}
+
+/*-----form---*/
+.inquirySheetForm {
+  padding-top: 50px;
+}
+
+.inquirySheetForm .inquiryLabel {
+  margin-left: -14px;
+}
+
+.inquirySheetForm .identitySeller {
+  margin-top: -10px;
+}
+
+.inquirySheetForm .upDataAddress {
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.inquirySheetForm .fontAddress {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.inquirySheetForm .addSeller {
+  color: #316ccb;
+  cursor: pointer;
+}
+
+.inquirySheetForm .ant-form-item-required:before {
+  content: "*" !important;
+  color: #f5222d !important;
+}
+
+.inquirySheetForm .materialMark:before {
+  display: inline-block;
+  margin-right: 4px;
+  content: "*";
+  font-family: SimSun;
+  line-height: 1;
+  font-size: 14px;
+  color: #f5222d;
+}
+
+/*---发送商家---*/
+.sendSeller .ant-tag {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  background: #daf2e6;
+  border-radius: 2px;
+  margin: 0 20px 10px 0;
+  border: 1px dotted #ffb432;
+  /*&:hover{
+      .anticon-close{
+        display:block;
+      }
+    }*/
+}
+
+.sendSeller .anticon-close {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  right: -6px;
+  top: -6px;
+  background: #ffa70f;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.sendSeller .anticon-close:hover {
+  color: #fff;
+}
+
+/*--买家身份--*/
+.ant-select-dropdown-menu-item:hover {
+  background: #fff;
+  color: #ffb432;
+}
+
+.ant-select-dropdown-menu-item-active {
+  background: #fff;
+  color: #ffb432;
+}
+
+/*----收货地址---*/
+.addressMwrapper {
+  width: 640px;
+  height: 610px;
+  margin: -305px 0 0 -320px;
+  background: #fafafa;
+}
+
+.addressMwrapper .addressInfo {
+  margin: 34px 0 26px 0;
+  height: 424px;
+  overflow-y: scroll;
+}
+
+.addressMwrapper .addressInfo .lineAddress {
+  min-height: 90px;
+  background: #fff;
+  display: flex;
+  margin: 10px 30px 16px;
+  align-items: center;
+  position: relative;
+}
+
+.addressMwrapper .addressInfo .lineAddress:hover {
+  box-shadow: 0 0 10px #dae6e0;
+  background: #f2faf7;
+  cursor: pointer;
+}
+
+.addressMwrapper .addressInfo .lineAddress .defaultAddress {
+  position: absolute;
+  width: 80px;
+  height: 24px;
+  right: 24px;
+  top: 12px;
+  border-radius: 12px;
+  color: #66bb6a;
+  background: #ebf7dd;
+}
+
+.addressMwrapper .addressInfo .activeAddress {
+  box-shadow: 0 0 10px #dae6e0;
+  background: #f2faf7;
+}
+
+.addressMwrapper .addressInfo .headerImg {
+  width: 80px;
+}
+
+.addressMwrapper .addressInfo .customerInfo {
+  display: flex;
+  align-items: center;
+}
+
+.inquiryAddressWrapper {
+  width: 560px;
+  height: 528px;
+  margin: -254px 0 0 -280px;
+  background: #fafafa;
+}
+
+.inquiryAddressWrapper .ant-form-item-label {
+  width: 150px;
+}
+
+.inquiryAddressWrapper .ant-input-lg {
+  font-size: 14px;
+}
+
+.inquiryAddressWrapper input {
+  background: #fafafa;
+  width: 300px;
+}
+
+.inquiryAddressWrapper .selectAddress {
+  width: 320px;
+}
+
+.inquiryAddressWrapper .selectAddress .ant-select-selection--single {
+  background: #fafafa;
+}
+
+.inquiryAddressWrapper .inquiryCheckBox {
+  margin-top: -10px;
+}
+
+.inquiryAddressWrapper .inquiryCheckBox .defaultAddress {
+  margin-left: 150px;
+}
+
+.inquiryAddressWrapper .detailAddress .ant-form-item-control {
+  width: 300px;
+}
+
+.inquiryAddressWrapper .detailAddress .ant-form-item-control textarea {
+  background: #fafafa;
+}
+
+.errorTip {
+  color: #f5222d;
+  margin: 1px 0 0 0;
+  padding-left: 80px;
+  line-height: 20px;
+}
+
+.materialList {
+  position: relative;
+}
+
+.materialList .labelMenu {
+  color: rgba(0, 0, 0, 0.85);
+  padding-left: 12px;
+}
+
+.materialList .regularBtn {
+  color: #ffb432;
+  border-color: #ffb432;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.materialList .regularBtn .anticon-upload {
+  font-size: 20px;
+}
+
+.materialList .addMaterial {
+  margin-left: 78px;
+}
+
+.materialTable thead tr {
+  height: 40px;
+}
+
+.materialTable thead tr th {
+  padding: 0 16px;
+  border-bottom: inherit;
+  background: #FFFAF0;
+}
+
+.materialTable tbody tr {
+  height: 60px;
+  background: #FFFAF0;
+}
+
+.materialTable tbody tr td {
+  padding: 0 16px;
+  border-bottom: inherit;
+  background: #FFFAF0;
+}
+
+.materialTable input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-size: 14px;
+}
+
+.materialTable input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: 14px;
+}
+
+.materialTable input:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-size: 14px;
+}
+
+.materialTable .ant-select-selection__rendered .ant-select-selection__placeholder {
+  font-size: 14px;
+}
+
+/*----卖家备注----*/
+.buyRemark {
+  position: relative;
+}
+
+.buyRemark .textLength {
+  position: absolute;
+  bottom: 6px;
+  right: 16px;
+}
+
+/*----报税要求----*/
+.buyRemark .ant-checkbox-group-item {
+  margin-right: 42px;
+}
+
+/*---上传图片----*/
+.ant-upload-list-picture-card .ant-upload-list-item-error {
+  border-color: #e6e6e6;
+}
+
+/*------询价有效期----*/
+.inquiryTime {
+  width: 300px !important;
+  height: 40px;
+}
+
+.inquiryTime .ant-calendar-picker-clear,
+.inquiryTime .ant-calendar-picker-icon {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: -10px;
+  font-size: 20px;
+}
+
+.inquirySheetForm .materialTotal {
+  display: block;
+  font-size: 14px;
+}
+
+.inquirySheetForm .hasError {
+  border-color: #f5222d;
+}
+
+.exportMaterial {
+  width: 460px;
+  height: 100px;
+  border: 5px solid #f2faf7;
+  border-radius: 2px;
+}
+
+.exportMaterial div {
+  line-height: 100px;
+}
+
+.inquiry-search-panel {
+  .bg-white;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 60px;
+  margin: 20px 0 16px 0;
+  .prl3;
+
+  span {
+    & + span {
+      margin-left: 30px;
+      .text-black;
+    }
+  }
+}
+
+.inquiry-main-title {
+  color: #000;
+  font-size: 24px;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 15px;
+  background: url("/static/images/bg-inquiry.png") no-repeat 0 top;
+}
+
+.inquiry-detail-sub-title {
+  font-size: 16px;
+  .text-black;
+  position: relative;
+  text-indent: 1em;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 18px;
+    background: #FFB432;
+    margin-top: 3px;
+  }
+}
+
+.inquiry-detail-sub-content {
+  margin: 18px 0 30px 36px;
+  .h5;
+  div {
+    .mt1
+  }
+
+  label {
+    .text-muted;
+  }
+
+  span {
+    .text-black;
+  }
+}
+
+//询价单详情标题
+.inquiry-detail-title {
+  margin-top: 13px !important;
+}
+
+//询价单详情收货信息
+.inquiry-detail-buyer-info {
+  margin-top: 47px !important;
+}
+
+//询价单详情右上角状态标识
+.mall-inquiry-detail-flag, .inquiry-detail-flag-overdue {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  width: 180px;
+  height: 120px;
+  color: white;
+  text-align: center;
+}
+
+.mall-inquiry-detail-flag {
+  background: url("/static/images/img-hall-detail.png") no-repeat left top;
+  color: white !important;
+  height: 71px;
+  width: 175px;
+  margin-top: -13px;
+  padding-top: 17px;
+  padding-left: 13px;
+}
+
+//询价单详情右上角状态标识
+.inquiry-detail-flag-overdue {
+  background: #999;
+}
+
+.inquiry-detail-flag .top,
+.inquiry-detail-flag-overdue .top {
+  width: 132px;
+  height: 32px;
+  font-size: 14px;
+  margin: 33px auto 24px auto;
+}
+
+.inquiry-detail-flag .day,
+.inquiry-detail-flag-overdue .day {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+  vertical-align: bottom
+}
+
+.my-inquiry-checked-detail:hover .anticon {
+  color: #316ccb !important;
+}
+
+//询价详情中供应商报价信息表
+.inquiry-detail-table-supply {
+  -webkit-box-shadow: 0 0 10px #dae6e0;
+  -moz-box-shadow: 0 0 10px #dae6e0;
+  box-shadow: 0 0 10px #dae6e0;
+
+  .ant-table-thead > tr > th {
+    .text-muted;
+    background: #dff3eb;
+  }
+
+  .ant-table-tbody > tr > td {
+    color: #38414c;
+    background: #f2faf7;
+  }
+}
+
+.inquiry-detail-table-inquiry {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.12);
+
+  .ant-table-thead > tr > th {
+    .text-muted;
+  }
+}
+
+//询价单附件图片
+.att-image {
+  .att-image-item {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-right: 16px;
+    &:hover {
+      .att-image-masker {
+        display: block;
+      }
+    }
+  }
+  .att-image-masker {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 80px;
+    color: white;
+    .h3;
+    text-align: center;
+    background: rgba(0, 0, 0, .3)
+  }
+}
+
+.timer {
+  display: inline;
+  margin-right: 35px;
+  .ant-statistic-content {
+    display: inline;
+  }
+}
+
+.flex-menu {
+  //position: fixed;
+  //.maxWidth;
+  //height: 60px;
+  //line-height: 60px;
+  //bottom: 220px;
+  //z-index: 99;
+  //left: 50%;
+  //margin-left: -610px;
+  //-webkit-box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.04);
+  //-moz-box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.04);
+  //box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.04);
+  //background: white;
+}

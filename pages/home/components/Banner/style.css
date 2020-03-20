@@ -1,0 +1,51 @@
+.material-carousel {
+  vertical-align: top;
+  width: 100%;
+  max-width: 758px;
+  height: 384px !important;
+  margin: 0 auto;
+  z-index: 5;
+}
+
+.material-carousel .slick-track {
+  z-index: 5;
+  height: 384px !important;
+}
+
+.material-carousel:hover .slick-arrow.slick-prev,
+.material-carousel:hover .slick-arrow.slick-next {
+  width: 30px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 9;
+  top: 50%;
+  margin-top: -24px;
+}
+
+.material-carousel:hover .slick-arrow.slick-prev {
+  left: 0;
+}
+
+.material-carousel:hover .slick-arrow.slick-prev:after {
+  display: block;
+  content: '\e602';
+  color: white;
+  font-family: "iconfont";
+  font-size: 30px;
+  margin-top: 3px;
+}
+
+.material-carousel:hover .slick-arrow.slick-next {
+  right: 0;
+}
+
+.material-carousel:hover .slick-arrow.slick-next:after {
+  display: block;
+  content: '\e600';
+  color: white;
+  font-family: "iconfont";
+  font-size: 30px;
+  margin-top: 3px;
+}
+
+/*# sourceMappingURL=style.css.map */

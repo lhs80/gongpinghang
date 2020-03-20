@@ -1,0 +1,68 @@
+@import "../../static/base.less";
+//商品详情中的商家店铺信息
+.product-detail {
+  height: 468px;
+  margin-top: 15px;
+  .maxWidth;
+
+  .content-top {
+    .bg-white;
+    .title {
+      -ms-word-break: break-all;
+      word-break: break-all;
+      color: white;
+      height: 60px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -o-box;
+      display: box;
+
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      -ms-flex-direction: column;
+      -o-box-orient: vertical;
+      box-orient: vertical;
+
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      -o-box-pack: center;
+      box-pack: center;
+
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      -o-box-align: center;
+      box-align: center;
+
+      -moz-box-flex: 1.0; /* Firefox */
+      -webkit-box-flex: 1.0; /* Safari 和 Chrome */
+      box-flex: 1.0;
+
+      padding: 0 10px;
+      line-height: 1.2;
+      .h4;
+      .text-center;
+      background-image: linear-gradient(to left, @primaryColor 1%, @secondaryColor);
+      background: -webkit-linear-gradient(right, @primaryColor, @secondaryColor 100%) !important;
+    }
+
+    label {
+      .text-muted;
+      display: inline-block;
+      min-width: 90px;
+    }
+  }
+
+  .content-bottom {
+    .bg-white;
+    margin-top: 16px;
+    .p3;
+  }
+
+  button {
+    width: 128px;
+    margin: 0 auto;
+  }
+}

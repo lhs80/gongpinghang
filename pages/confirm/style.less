@@ -1,0 +1,116 @@
+@import '../../static/base.less';
+
+.confirm-order-wrapper {
+  color: black;
+  .mt2;
+  .bg-white;
+  .maxWidth;
+  padding: 10px 0 0 0;
+
+  .common-title {
+    height: 40px;
+    line-height: 40px;
+    .text-grey;
+    .h4;
+    .prl1;
+    .mt4;
+    .line {
+      .bg-primary;
+      width: 4px;
+      height: 16px;
+    }
+  }
+
+  .address-list {
+    padding: 0 16px 0 16px;
+    &.expand {
+      height: 170px;
+      overflow: hidden;
+    }
+
+    &.spread {
+      height: 355px;
+      overflow: auto;
+    }
+    .address-list-item {
+      padding: 13px 16px 0 16px;
+      display: inline-block;
+      width: 24%;
+      height: 168px;
+      border: solid 1px #E4E7ED;
+      position: relative;
+      cursor: pointer;
+      vertical-align: top;
+      &:not(:nth-child(4n+1)) {
+        margin-left: 1%;
+      }
+      &:nth-child(n+5) {
+        margin-top: 10px;
+      }
+      &.active {
+        position: relative;
+        background: #FDF6F8;
+        border: solid 1px #E42219;
+        &:after {
+          content: '\e691';
+          font-family: 'iconfont';
+          display: block;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          .text-primary;
+          width: 24px;
+          height: 30px;
+          font-size: 24px;
+        }
+      }
+      &:hover {
+        background: #FDF6F8;
+        .btn {
+          display: inline-block;
+        }
+      }
+      .btn {
+        display: none;
+        .text-muted;
+        cursor: pointer;
+        & + .btn {
+          margin-left: 10px;
+        }
+        &:hover {
+          .text-primary
+        }
+      }
+    }
+  }
+
+  .footer {
+    height: 72px;
+    .text-right;
+    border-top: solid 1px #E4E7ED;
+    margin-top: 23px;
+    .title {
+      .text-muted;
+      .prl5;
+      vertical-align: middle;
+    }
+    .money {
+      vertical-align: middle;
+      .text-primary;
+      font-size: 32px;
+      margin-right: 10px;
+      line-height: 1;
+      font-weight: bold;
+    }
+    .btn-submit {
+      display: inline-block;
+      .text-center;
+      width: 160px;
+      height: 72px;
+      line-height: 72px;
+      background: #B4A078;
+      color: white;
+      font-size: 18px;
+    }
+  }
+}

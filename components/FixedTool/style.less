@@ -1,0 +1,43 @@
+@import "../../static/base.less";
+
+.flex-type-bar-right {
+  top: 220px;
+  bottom: 435px;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  width: 40px;
+  z-index: 999;
+  ul {
+    position: relative;
+    width: 40px;
+    z-index: 10;
+    li {
+      position: relative;
+      height: 40px;
+      line-height: 40px;
+      cursor: pointer;
+      .text-center;
+      background: #38414C;
+      .anticon{
+        color: rgba(255, 255, 255, .8) !important;
+      }
+      .h3;
+      .explain {
+        position: absolute;
+        display: none;
+        width: 100px;
+        left: -100px;
+        top: 0;
+        .bg-primary;
+        .text-white;
+        .h5;
+      }
+      &:hover {
+        .explain {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../../static/base.less";
+
+.screen-outer {
+  margin: 16px auto;
+  width: 1220px;
+  overflow: hidden;
+  .left, .main, .right {
+    float: left;
+  }
+  .left {
+    width: 230px;
+    .material-typelist-wrapper {
+      position: relative;
+    }
+  }
+  .main {
+    width: 758px;
+    overflow: hidden;
+    .top {
+      height: 400px;
+    }
+  }
+  .right {
+    width: 230px;
+    height: 400px;
+    .text-center;
+    background: white url('/static/images/icon-adv.png') no-repeat bottom left / 100% auto;
+    padding-top: 33px;
+  }
+}
+
+.page-404 {
+  position: relative;
+  .maxWidth;
+  height: 700px;
+  margin: 0 auto;
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}

@@ -1,0 +1,117 @@
+@import '../../../../static/base.less';
+
+.userInfo-slider {
+  background: white !important;
+
+  .ant-menu {
+    border: none;
+  }
+  .ant-menu-item-selected {
+    background: #FFFAF0 !important;
+    .text-primary;
+
+    &:after {
+      left: 0 !important;
+      right: inherit !important;
+    }
+  }
+}
+
+.userInfo-slider, .setting-slider {
+  &.ant-layout-sider {
+    flex: 0 0 210px !important;
+    min-width: 210px !important;
+    width: 210px !important;
+    max-width: 210px !important;
+    margin-right: 16px;
+  }
+
+  //侧边栏菜单栏高度
+  .ant-menu-item {
+    color: #353a46;
+    font-size: 16px !important;
+    padding-left: 65px !important;
+    height: 60px !important;
+    line-height: 60px !important;
+  }
+
+  .ant-menu-submenu {
+    padding: 10px 0 10px 65px !important;
+
+    .ant-menu-submenu-title {
+      font-size: 16px;
+      line-height: 60px !important;
+      padding: 0 !important;
+
+      .ant-menu-submenu-arrow {
+        margin-top: 10px;
+      }
+    }
+
+  }
+
+  .ant-menu-sub {
+    & > .ant-menu-item {
+      font-size: 14px;
+      padding-left: 0 !important;
+    }
+  }
+
+  .ant-menu-item-customer {
+    display: block;
+    color: #3b465f;
+    font-size: 16px;
+    margin-left: -30px !important;
+    height: 60px;
+    line-height: 60px;
+    //background: #fafafa;
+    &.active {
+      position: relative;
+      background: rgba(0, 166, 95, 0.05);
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 3px;
+        height: 100%;
+        background: #00a65f;
+      }
+    }
+  }
+
+  // 侧边栏菜单选中
+  .ant-menu-item-selected {
+    font-weight: bold;
+    background: red;
+  }
+
+  //消息中心侧边栏
+  .messageSlider {
+    .ant-menu-item {
+      position: relative;
+
+      .newsCount {
+        position: absolute;
+        right: 10px;
+        top: 20px;
+
+        .ant-badge-count {
+          line-height: 16px;
+        }
+      }
+    }
+  }
+
+  .setting-home {
+    display: block;
+    color: #3b465f;
+    font-size: 14px;
+    padding-left: 30px !important;
+    height: 60px;
+    line-height: 60px;
+    background: #fafafa;
+  }
+}

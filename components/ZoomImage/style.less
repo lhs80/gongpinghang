@@ -1,0 +1,44 @@
+.ks-image {
+  position: relative;
+  overflow: hidden;
+  width: 358px;
+  height: 358px;
+
+  .ks-imagezoom-lens {
+    position: absolute;
+    display: none;
+    background: url("/static/images/ks-imagezoom-mask.png") repeat scroll 0 0 transparent;
+    cursor: move;
+    z-index: 1;
+    font-size: 0;
+    width: 150px;
+    height: 150px;
+  }
+
+  &:hover {
+    .ks-imagezoom-lens {
+      display: block;
+    }
+
+    & + .ks-imagezoom-viewer {
+      display: block;
+    }
+  }
+
+  & + .ks-imagezoom-viewer {
+    display: none;
+    position: absolute;
+    left: 400px;
+    top: 30px;
+    width: 358px;
+    height: 358px;
+    overflow: hidden;
+    z-index: 9;
+    img {
+      width: 800px !important;
+      height: 800px !important;
+      position: absolute
+    }
+  }
+}
+

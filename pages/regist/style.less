@@ -1,0 +1,254 @@
+@import "../../static/base.less";
+
+.register-wrapper {
+  background: url("/static/images/bg-regist.png") #fffbf4;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+}
+
+//登录页和绑定手机号码头部
+.regist-head {
+  height: 140px;
+  padding: 19px 0 30px 0;
+  background: transparent;
+  .login-head-wrapper {
+    .maxWidth;
+    margin: 0 auto;
+  }
+}
+
+.regFormWrapper {
+  margin-top: 60px;
+}
+
+.regFormWrapper .baImg {
+  position: absolute;
+  top: 40px;
+  left: 108px;
+}
+
+.registerForm {
+  margin: 0 auto;
+  width: 500px;
+  min-height: 540px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 15px #fdebc8;
+  position: relative;
+}
+
+.registerForm .lineForm span {
+  display: inline-block;
+  width: 165px;
+  height: 6px;
+  background: #fdebc8;
+  vertical-align: top;
+}
+
+.registerForm .lineForm span.cur {
+  background: @primaryColor;
+}
+
+.registerForm .lineForm span + span {
+  margin-left: 2px;
+}
+
+.registerForm .userWrapper input {
+  .border-circle;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 27px;
+}
+
+.registerForm .userWrapper label {
+  height: 50px;
+  line-height: 50px;
+}
+
+.registerForm .userWrapper .userType {
+  position: absolute;
+  display: inline-block;
+  width: 118px;
+  line-height: 40px;
+  font-size: 14px;
+  text-align: right;
+  padding-right: 10px;
+  color: #000;
+}
+
+.registerForm .userWrapper .ant-tabs-bar {
+  width: 382px;
+  float: right;
+  margin-bottom: 20px;
+  border-bottom: inherit;
+}
+
+.registerForm .userWrapper .ant-tabs-bar .ant-tabs-tab {
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 2px;
+  padding: 0;
+  border: 1px solid #dfe6e2;
+  color: gray;
+  margin-right: 20px;
+}
+
+.registerForm .userWrapper .ant-tabs-bar .ant-tabs-tab-active {
+  background: #1DA57A;
+  color: #fff;
+  font-weight: normal;
+}
+
+.registerForm .userWrapper .ant-tabs-bar .ant-tabs-ink-bar {
+  height: 0;
+}
+
+.registerForm .userWrapper .ant-tabs-bar .ant-tabs-nav-wrap {
+  margin-bottom: 0;
+}
+
+.registerForm .userWrapper .ant-tabs-content-no-animated {
+  margin-top: 70px;
+}
+
+.registerForm .userWrapper .regSendCode {
+  font-size: 14px;
+}
+
+.registerForm .userWrapper .ant-form-item-required:before {
+  .text-primary
+}
+
+.registerForm .form-bottom {
+  margin-top: -15px;
+}
+
+/*----每一行form---*/
+.form-item {
+  margin-bottom: 24px;
+  height: 50px;
+  /*---发送验证码---*/
+}
+
+.form-item .ant-form-item-label {
+  width: 118px;
+  font-size: 14px;
+  line-height: 50px;
+}
+
+.form-item .sendCode {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  line-height: 40px;
+  float: right;
+  text-align: center;
+  color: #fff;
+}
+
+.form-item .sendCode:hover {
+  border: 1px solid #1DA57A;
+}
+
+.form-item .companyName .ant-select-selection--single {
+  height: 40px;
+}
+
+.form-item .companyName .ant-select-selection__rendered {
+  line-height: 40px;
+}
+
+.userWrapper {
+  .userType {
+    position: absolute;
+    display: inline-block;
+    width: @labelWidth;
+    line-height: @inputHeight;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 10px;
+    color: #000;
+  }
+  .ant-tabs-bar {
+    width: 382px;
+    float: right;
+    margin-bottom: 20px;
+    border-bottom: inherit;
+    .ant-tabs-tab {
+      width: 140px;
+      height: @inputHeight;
+      line-height: @inputHeight;
+      text-align: center;
+      border-radius: 2px;
+      padding: 0;
+      border: 1px solid #dfe6e2;
+      color: gray;
+      margin-right: 20px;
+    }
+    .ant-tabs-tab-active {
+      background: @primaryColor;
+      color: #fff;
+      font-weight: normal;
+    }
+    .ant-tabs-ink-bar {
+      height: 0;
+    }
+    .ant-tabs-nav-wrap {
+      margin-bottom: 0;
+    }
+  }
+  /*---无动画---*/
+  .ant-tabs-content-no-animated {
+    margin-top: 70px;
+  }
+  .regSendCode {
+    font-size: 14px;
+  }
+  .ant-form-item-required:before {
+    color: #00a65f;
+  }
+}
+
+.regModal {
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 99999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  .modalForm {
+    width: 500px;
+    height: 350px;
+    border-radius: 8px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -200px 0 0 -300px;
+    .modalTop {
+      height: 140px;
+      line-height: 140px;
+      .text-grey;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px 8px 0 0;
+    }
+    .userContent {
+      padding: 25px 0 25px 0;
+    }
+    .modenBtn {
+      width: 250px;
+      margin: 0 auto;
+    }
+  }
+}

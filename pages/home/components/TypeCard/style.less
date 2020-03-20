@@ -1,0 +1,133 @@
+@import "../../../../static/base.less";
+
+.type-card {
+  .maxWidth;
+  overflow: hidden;
+  height: 510px;
+  margin-top: 32px;
+  .type-card-tabs {
+    border-bottom: 3px solid;
+    line-height: 1;
+    .text-right;
+    .type-card-tabs_tab {
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      padding: 0 0 10px 0;
+      margin-left: 24px;
+      //.text-grey;
+      &.active {
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          display: block;
+          width: 0;
+          height: 0;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-bottom: 6px solid;
+          margin-left: -3px;
+        }
+      }
+    }
+  }
+  .left {
+    position: relative;
+    width: 230px;
+    float: left;
+    .top {
+      .floot {
+        font-size: 48px;
+      }
+      height: 303px;
+      .text-white;
+      padding: 230px 20px 0 17px;
+    }
+    .bottom {
+      height: 179px;
+      background: #FAFAFA;
+      .tips {
+        display: inline-block;
+        width: 50%;
+        height: 60px;
+        line-height: 60px;
+        .text-grey;
+        .h5;
+        .text-center;
+        vertical-align: middle;
+        border-bottom: solid 1px #F5F5F5;
+        a:hover {
+          border-bottom: solid 1px @primaryColor;
+        }
+        &:nth-child(odd) {
+          border-right: solid 1px #F5F5F5;
+        }
+      }
+    }
+  }
+  .main {
+    position: relative;
+    float: left;
+    width: 989px; /*changed by zhaoquan*/
+    height: 483px;
+    .bg-white;
+    overflow: hidden;
+    .product-wrapper {
+      overflow: hidden;
+      height: 483px;
+      .product-item {
+        float: left;
+        width: 20%; /*changed by Qaun*/
+        height: 242px;
+        padding: 20px 23px;
+        &:not(:nth-child(4n)) {
+          border-right: solid 1px #f5f5f5;
+        }
+        &:nth-child(-n+4) {
+          border-bottom: solid 1px #f5f5f5;
+        }
+        .title {
+          margin-top: 11px;
+          color: #38414C;
+          .text-ellipsis;
+          .text-center;
+          line-height: 1;
+        }
+        .price {
+          .h4;
+          .text-primary;
+          .text-center;
+          margin-top: 16px;
+          line-height: 1;
+          font-weight: bold;
+
+        }
+        .coverImage {
+          img {
+            width: 150px;
+            height: 150px;
+          }
+        }
+        &:hover {
+          cursor: pointer;
+          .title {
+            .text-primary;
+          }
+        }
+      }
+    }
+  }
+  .right {
+    position: relative;
+    width: 197.5px;
+    height: 483px;
+    float: left;
+    overflow: hidden;
+    .bg-white;
+    //background: white url('/static/images/img-index-brand.png') no-repeat top right /auto auto;
+    //background: white url('/static/images/img-brand.png') top left /auto auto;
+    margin-left: 4px;
+  }
+}
