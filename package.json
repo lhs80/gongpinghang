@@ -30,7 +30,7 @@
     "swiper": "^4.5.0",
     "url-loader": "^2.1.0",
     "webpack-spritesmith": "^1.0.1",
-    "xlsx": "^0.14.4",
+    "xlsx": "^0.17.0",
     "xlsx-style": "^0.8.13"
   },
   "devDependencies": {
